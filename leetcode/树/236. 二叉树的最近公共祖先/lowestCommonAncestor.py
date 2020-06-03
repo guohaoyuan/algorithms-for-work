@@ -1,40 +1,22 @@
 # -*- coding : utf-8 -*-
 
 class Solution:
-
     def lowestCommonAncestor(self, root, p, q):
-        """
+        # 1. 递归结束条件：越过叶子节点，直接返回
+        if not root:
+            return
 
-        :param root: 根节点
-        :param p: 节点p
-        :param q: 节点q
-        :return:
-        """
-        if root.val > p.val and root.val > q.val:
-            # 公共父节点应该在左子树中
-            return self.lowestCommonAncestor(root.left, p, q)
-        elif root.val < p.val and root.val < q.val:
-            # 公共节点应该在右子树中
-            return self.lowestCommonAncestor(root.right, p, q)
-        else:
-            # 就是当前节点
+        # 2. 递归操作：
+        l = self.lowestCommonAncestor(root.left, p, q)
+        r = self.lowestCommonAncestor(root.right, p, q)
+
+        # 分三种情况
+        if root.val == p.val or root.val == q.val:
             return root
-    """
-    时间复杂度：n，遍历每一个节点
-    空间复杂度：h，二叉树的深度，最优秀的情况为logn，最差的情况n"""
+        if l and r:
+            return root
 
-    def lowestCommonAncestor_v2(self, root, p, q):
-        # 当前节点
-        node = root
-
-        while node:
-            if node.val > p.val and node.val > q.val:
-                node = node.left
-            elif node.val < p.val and node.val < q.val:
-                node = node.right
-            else:
-                return node
-    """
-    时间复杂度：n，遍历每一个节点
-    空间复杂度：1，没有递归，常数级别的常量
-    """
+        if l and not r:
+            return l
+        if r and not l:
+            return r
