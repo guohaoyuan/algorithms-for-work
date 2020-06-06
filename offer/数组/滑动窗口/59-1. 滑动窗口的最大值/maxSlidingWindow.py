@@ -21,8 +21,8 @@ class Solution(object):
 
         # 3. 算法流程：首先初始化窗口
         for i in range(k):
-            # 保证严格单调递减
-            while deque and deque[-1] <= nums[i]:
+            # 保证单调递减
+            while deque and deque[-1] < nums[i]:
                 deque.pop()
                 index.pop()
             # 索引和数字都进入队列
@@ -32,8 +32,8 @@ class Solution(object):
 
         # 遍历剩余数组
         for i in range(k, len(nums)):
-            # 首先更新数组，保证严格单调递减
-            while deque and deque[-1] <= nums[i]:
+            # 首先更新数组，保证单调递减
+            while deque and deque[-1] < nums[i]:
                 index.pop()
                 deque.pop()
             # 添加数子
