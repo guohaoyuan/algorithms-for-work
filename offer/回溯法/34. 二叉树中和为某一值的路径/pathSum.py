@@ -19,7 +19,7 @@ class Solution:
             :return: 没有返回，直接修改path res
             """
             # 3.1 结束条件：到达了叶子节点，直接返回
-            if not root:
+            if not node:
                 return
 
             # 3.2 递归操作
@@ -30,7 +30,7 @@ class Solution:
             # 更新过目标值，看是否满足条件
             # 目标值为0且已经到达叶子节点,直接返回
             if tar == 0 and not node.left and not node.right:
-                res.append(res)
+                res.append(list(path))
 
             # 递归操作左右子树
             helper(node.left, tar)
