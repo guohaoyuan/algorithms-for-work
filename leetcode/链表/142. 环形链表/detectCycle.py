@@ -26,7 +26,7 @@ class Solution(object):
         # 再找到节点
         fast = head
 
-        while True:
+        while True: # 因为有可能已经在环处相遇，此时在保持同步，将永远错过彼此
             if fast == low:
                 return fast
             fast = fast.next
