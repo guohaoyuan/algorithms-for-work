@@ -27,10 +27,31 @@ class Solution(object):
                 dp[i] = nums[i]
         return max(dp)
 
+    # 不修改原输入
+    def maxSubArray_v2(self, nums):
+        # 1. 特殊情况：输入为空
+        if not nums:
+            return 0
+
+        # 2. 定义状态转移方程的初始状态
+        max_dp = nums[0]
+        dp = nums[0]
+
+        # 3. 动态转移方程从第二位开始
+        for i in range(1, len(nums)):
+            if dp >= 0:
+                dp = dp + nums[i]
+            else:   # 如果dp<0，此时相加反而比nums[i]更小了
+                dp = nums[i]
+            max_dp = max(max_dp, dp)
+        return max_dp
+
 if __name__ == '__main__':
     test1 = [-2,1,-3,4,-1,2,1,-5,4]
+    test2 = list(test1)
     solution = Solution()
     print(solution.maxSubArray(test1))
+    print(solution.maxSubArray_v2(test2))
     """
     时间复杂度：n,遍历一次数组
     空间复杂度：1,原地修改。如果不允许原地修改，n创建辅助数组
