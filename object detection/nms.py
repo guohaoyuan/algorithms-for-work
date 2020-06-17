@@ -1,5 +1,5 @@
 # -*- coding : utf-8 -*-
-
+# 可参考：https://blog.csdn.net/u012052268/article/details/105989026
 """
 nms是一种祛除冗余框的过程
 步骤如下：
