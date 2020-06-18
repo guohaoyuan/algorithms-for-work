@@ -20,20 +20,20 @@ def bubble_sort1(a):
 
 def bubble_sort2(a):
     if not a:
-        return  a
+        return a
 
     # 2
     n = len(a)
 
     for i in range(n):
         # 开始遍历前先设置一个变量flag来判断是否有序
-        flag = False    # false表示数组有序
+        flag = True    # T表示数组有序
         for j in range(i + 1, n):
             if a[i] > a[j]:
                 a[i], a[j] = a[j], a[i]
-                flag = True     # 经过判断语句，表述数组需要排序;若是美景过判断表示数组有序，在下面直接跳出
+                flag = False     # 经过判断语句，表述数组需要排序;若是美景过判断表示数组有序，在下面直接跳出
 
-        if not flag: # 表示flag已经有序
+        if flag: # 表示flag已经有序
             break
 
 if __name__ == '__main__':
