@@ -67,6 +67,7 @@ class Solution:
 if __name__ == "__main__":
     digits1 = "23"
     solution = Solution()
+    print(solution)
     print(solution.letterCombinations_v2(digits1))
     """
     时间复杂度: 3^n1 * 4^(n-n1), n1表示按键有三种取值,n2表示按键有四种取值
