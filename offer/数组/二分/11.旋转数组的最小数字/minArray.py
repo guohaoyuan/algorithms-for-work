@@ -17,21 +17,22 @@ class Solution(object):
         R = len(numbers) - 1
 
         # 3. 算法流程
-        while L <= R:
+        while L < R:
             mid = (L + R) // 2
 
-            # 例如 [5, 1, 2, 3, 4]，旋转点在左侧
+            # 例如 [5, 1, 2, 3, 4]，最小值在区间[L, mid]
             if numbers[mid] < numbers[R]:
                 R = mid
 
-            # 例如 [2, 3, 4, 5, 1],旋转点在右侧
+            # 例如 [2, 3, 4, 5, 1], 最小值在区间(mid, R]
             elif numbers[mid] > numbers[R]:
                 L = mid + 1
 
             # 例如 [1, 0, 1, 1, 1] [1, 1, 1, 0, 1]
-            else:
-                R -= 1
-        return numbers[L]
+            elif numbers[mid] == numbers[R]:
+                # 不能分清,mid属于哪一侧, 最小值在[L, R)
+                R = R - 1
+        return numbers[L]   # 三点收敛
 
 if __name__ == '__main__':
     test1 = [3, 4, 5, 1, 2]
