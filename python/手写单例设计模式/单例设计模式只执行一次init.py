@@ -1,4 +1,3 @@
-# -*- coding : utf-8 -*-
 
 class MusicPlayer(object):
     # 1. 创建一个类属性，记录被创建对象的引用 ###
@@ -9,7 +8,7 @@ class MusicPlayer(object):
 
     def __new__(cls, *args, **kwargs):
         # 2. 首先判断类属性是否为空，如果为空调用父类new方法 ###
-        if cls.instance is  None:
+        if cls.instance is None:
             cls.instance = super().__new__(cls)
 
         # 3. 返回创建对象的引用 ###
