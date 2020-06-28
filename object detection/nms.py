@@ -1,13 +1,13 @@
 # -*- coding : utf-8 -*-
 # 可参考：https://blog.csdn.net/u012052268/article/details/105989026
 """
-nms是一种祛除冗余框的过程
+nms是一种去除冗余框的过程
 步骤如下：
 for cls in all cls:
     1. 获取当前cls对应的左上角，右下角，scores信息，并计算面积
     2. 降序排列scores，并记录当前最大score的框
     3. 当前score最大的框与剩余的框计算iou，并去除大于阈值的框
-    4. 对于剩余的框，循环执行2. 3. 直到所有的框均满足要求，即不能在去除框
+    4. 对于剩余的框，循环执行3. 直到所有的框均满足要求，即不能在去除框
 """
 
 import numpy as np
@@ -30,7 +30,6 @@ def nms(predicts_dict, threshold=0.5):
         x1, y1, x2, y2, scores = bbox_array[:, 0], bbox_array[:, 1], bbox_array[:, 2], bbox_array[:, 3], bbox_array[:, 4]
         areas = (x2 - x1 + 1) * (y2 - y1 + 1)
 
-
         # 2.1 按照scores降序排列
         order = scores.argsort()[::-1]
 
@@ -42,7 +41,7 @@ def nms(predicts_dict, threshold=0.5):
             i = order[0]    # 2.2 记录当前score最大的bbox对应索引
 
             keep.append(i)  # 添加到keep，表示保留下来
-
+            print(keep)
             # 3.1 计算iou
             # 计算当前score最大的框和其余框的相交矩形坐标
             inter_x1 = np.maximum(x1[i], x1[order[1:]])
@@ -65,6 +64,7 @@ def nms(predicts_dict, threshold=0.5):
         predicts_dict[object_name] = bbox.tolist()
         predicts_dict = predicts_dict
     return predicts_dict
+
 
 if __name__ == '__main__':
     predict_dict = {'cup': [[59, 120, 137, 368, 0.124648176], [221, 89, 369, 367, 0.35818103], [54, 154, 148, 382, 0.13638769]]}
