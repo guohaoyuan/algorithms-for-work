@@ -18,4 +18,3 @@ class Solution(object):
         depthRight = self.maxDepth(root.right)
 
         return depthLeft + 1 if depthLeft > depthRight else depthRight + 1
-/home/ghy/PycharmProjects/algorithms-for-work/offer/树/第k大元素/maxDepth.py
