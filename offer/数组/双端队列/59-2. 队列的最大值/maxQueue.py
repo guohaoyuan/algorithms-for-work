@@ -24,7 +24,7 @@ class MaxQueue(object):
         :param value:
         :return:
         """
-        if self.maxQueue and self.maxQueue[-1] < value:
+        while self.maxQueue and self.maxQueue[-1] < value:
             self.maxQueue.pop() # 尾部元素弹出
         self.maxQueue.append(value)
         self.queue.append(value)
