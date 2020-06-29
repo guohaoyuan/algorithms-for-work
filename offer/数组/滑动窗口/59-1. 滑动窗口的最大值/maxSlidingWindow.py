@@ -1,4 +1,6 @@
-# -*- coding = utf-8 -*-
+"""
+这个方法太垃圾了,看leetcode liweiwei的方法
+"""
 import collections
 
 class Solution(object):
