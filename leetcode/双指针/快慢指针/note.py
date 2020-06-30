@@ -23,4 +23,7 @@ while True:                 # 在循环里就可以按照常规逻辑从前向�
 #####################
 关于是有pre指针和cur指针,通常将pre = None; cur = head
 
+pre初始化是有讲究的:
+                如果head节点会被删除,或者被翻转, 换句话说,就是会进行指针上的指向None或者val的变化, 此时初始化pre = NONE cur = head
+                如果head节点不会删除操作或者被翻转, 那么初始化pre=head cur = head.next
 """
