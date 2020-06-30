@@ -4,6 +4,8 @@
 
 所以使用快慢指针,想让fast往前走k - 1步
 然后两者起步走
+
+结束条件, 快指针到了tail
 """
 
 # Definition for singly-linked list.
