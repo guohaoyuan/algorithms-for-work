@@ -14,19 +14,18 @@
 
 
 class Solution:
-    def getKthFromEnd(self, head, k):
+    def getKthFromEnd(self, head: ListNode, k: int) -> ListNode:
         if not head:
             return head
 
-        slow, fast = head, head
-        count = k - 1
-        while count:
+        slow = head
+        fast = head
+
+        for i in range(k - 1):
             fast = fast.next
-            count -= 1
 
         while True:
-            if not fast or not fast.next:
+            if fast and not fast.next:
                 return slow
-            else:
-                fast = fast.next
-                slow = slow.next
+            fast = fast.next
+            slow = slow.next
