@@ -1,3 +1,8 @@
+"""
+结束条件:
+奇数情况,快指针到tail
+偶数情况,快指针None
+"""
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
