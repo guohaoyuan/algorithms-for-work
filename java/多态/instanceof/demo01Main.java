@@ -20,9 +20,9 @@ public class demo01Main {
         if (animal instanceof Cat) {
             Cat cat = (Cat) animal;
             cat.CatchMouse();
-        }
+        }                                                                                                                                                                                                                                                       
 
-        // 关于有什么用， 看着很繁琐， 当传入的对象不明确时，有用。
+        // 关于有什么用， 看着很繁琐， 当传入的对象不明确时，有用。                                                                                                                                                                                                                                                                                                                                                                                                                                       
         // 例如不清楚传入的动物是猫还是狗
         GiveMeAPet(new Dog());
         GiveMeAPet(new Cat());
