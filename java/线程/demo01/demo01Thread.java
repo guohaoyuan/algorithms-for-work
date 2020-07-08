@@ -1,5 +1,3 @@
-
-
 public class demo01Thread {
 
     public static void main(String[] args) {
