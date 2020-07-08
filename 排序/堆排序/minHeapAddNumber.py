@@ -9,7 +9,7 @@ def MinHeapFixUp(nums, i):
     # 获得父节点的索引
     j = (i - 1) // 2
 
-    # 待插入节点大于父节点到根节点的元素
+    # 待插入节点小于父节点到根节点的元素
     while j >= 0 and nums[i] < nums[j]:
         nums[i], nums[j] = nums[j], nums[i]
 
@@ -21,6 +21,7 @@ def MinHeapFixUp(nums, i):
 
 def Minadd(nums, n, nNum):
     nums.append(nNum)
+    # 添加一个元素，所以是n
     MinHeapFixUp(nums, n)
 
 
