@@ -3,7 +3,7 @@ def MinHeapFixUp(nums, i):
     将新节点i插入到数组nums中,
     新节点i的父节点(i-1)/2
     :param nums:
-    :param i: index
+    :param i: index需要调整的索引位
     :return:
     """
     # 获得父节点的索引

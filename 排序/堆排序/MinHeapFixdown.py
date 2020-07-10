@@ -3,7 +3,7 @@ def minHeapFixdown(nums, i, n):
     i需要调整的索引位
     :param nums:
     :param i:
-    :param n:
+    :param n: 长度
     :return:
     """
     # 根节点，需要调整的索引位
