@@ -19,9 +19,9 @@ class Solution(object):
 
         return depthLeft + 1 if depthLeft > depthRight else depthRight + 1
 
+
 """
 非递归操作
-
 """
 import collections
 
@@ -46,4 +46,38 @@ class Solution1:
                     queue.append(cur.right)
 
             depth += 1
+        return depth
+
+
+"""
+将深度融入到queue中
+"""
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+
+class Solution:
+    def maxDepth(self, root: TreeNode) -> int:
+        if not root:
+            return 0
+
+        # 创建队列，根节点进入队列，何其状态
+        queue = collections.deque()
+        queue.append((root, 1))
+
+        while queue:
+            # 记录队列长度
+            size = len(queue)
+            for i in range(size):
+                cur, depth = queue.popleft()
+
+                # 将左右孩子入队
+                if cur.left:
+                    queue.append((cur.left, depth + 1))
+                if cur.right:
+                    queue.append((cur.right, depth + 1))
         return depth
