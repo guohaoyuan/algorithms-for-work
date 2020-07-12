@@ -21,7 +21,7 @@ class Solution:
         if not root:
             return
 
-        if root.val == p.val or root.val == q.val:
+        if root.val == p.val or root.val == q.val:  ### 重点关注
             return root
 
         left = self.lowestCommonAncestor(root.left, p, q)
