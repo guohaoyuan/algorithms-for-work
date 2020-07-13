@@ -12,7 +12,7 @@
                 如果前向节点没初始化，初始化头节点self.head
                 如果前向节点初始化，将当前指针cur和pre进行连接
                     self.pre.right = cur
-                    cur.left = se;f.pre
+                    cur.left = self.pre
 
                 更新前向指针
                     self.pre = cur
