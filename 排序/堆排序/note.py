@@ -19,4 +19,13 @@
     明显叶子节点都是已经是堆了，而叶子节点的数目占据一半，所以开始位置n//2-1,结束位置0
     对于每个位置执行下沉操作
 
+
+在python中的堆操作
+默认创建小顶堆
+heapq.heapify(list)         将list变成堆结构
+
+heapq.heappop(list)         将list的堆顶元素踢出去
+
+heapq.heappush(list, element)   将element加入到堆中，并恢复堆结构
+参考offer40,leetcode 215
 """
