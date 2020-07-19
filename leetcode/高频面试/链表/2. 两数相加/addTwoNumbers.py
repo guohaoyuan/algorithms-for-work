@@ -48,3 +48,53 @@ class Solution:
         if flag:
             cur.next = ListNode(flag)
         return dummy.next
+
+"""
+两者思路一样，只是后者是自己想出来的
+"""
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+        if not l1:
+            return l2
+        if not l2:
+            return l1
+
+        p1 = l1
+        p2 = l2
+        dummy = ListNode(-1)
+        head = dummy
+        shang = 0
+
+        while p1 or p2:
+            # 针对不同情况，进行求和
+            if not p1:
+                tmp = p2.val + shang
+            if not p2:
+                tmp = p1.val + shang
+            if p1 and p2:
+                tmp = p1.val + p2.val + shang
+
+            # 判断求和是否大于10
+            if tmp >= 10:
+                shang, yu = 1, tmp % 10
+            else:
+                shang, yu = 0, tmp % 10
+            # 创建节点
+            head.next = ListNode(yu)
+
+            # 更新三个链表的指针
+            head = head.next
+            if p1:
+                p1 = p1.next
+            if p2:
+                p2 = p2.next
+        # 处理最后的进位
+        if shang:
+            head.next = ListNode(shang)
+        return dummy.next
