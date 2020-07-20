@@ -87,3 +87,42 @@ class Codec:
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()
 # codec.deserialize(codec.serialize(root))
+
+    def deserialize(self, data):
+        """Decodes your encoded data to tree.
+
+        :type data: str
+        :rtype: TreeNode
+        """
+        if data == "[]":
+            return None
+
+        data = data[1:-1].split(',')
+
+        queue = collections.deque()
+        root = TreeNode(int(data[0]))
+        queue.append(root)
+        i = 0
+        n = len(data)
+
+        while queue and i < n:
+            size = len(queue)
+            for index in range(size):
+                cur = queue.popleft()
+
+                if data[i + 1] != "null":
+                    left = TreeNode(int(data[i + 1]))
+                    queue.append(left)
+                    cur.left = left
+                    i += 1
+                else:
+                    i += 1
+
+                if data[i + 1] != "null":
+                    right = TreeNode(int(data[i + 1]))
+                    queue.append(right)
+                    cur.right = right
+                    i += 1
+                else:
+                    i += 1
+        return root
