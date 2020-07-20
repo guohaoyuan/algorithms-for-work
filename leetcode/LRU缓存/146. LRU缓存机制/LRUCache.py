@@ -128,7 +128,7 @@ class LRUCache:
         """
         new_item = Node(key, value)
         if key in self.map:
-            self.cache.remove(self.map[key])
+            self.cache.remove(self.map[key])    # 必须通过查询哈希表的方式找到对应的节点
             self.cache.addFirst(new_item)
             self.map[key] = new_item            #### 易错
         else:
