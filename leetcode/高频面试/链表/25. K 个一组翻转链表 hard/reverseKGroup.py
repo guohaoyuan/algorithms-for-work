@@ -26,6 +26,8 @@
         start = nt
         end = nt
 
+
+pre和dummy的指针指向竟然是共进退
 """
 
 
@@ -126,55 +128,51 @@ class Solution:
 
 class Solution:
     def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
-        if not head:
-            return head
-        if k == 1:
+        if not head or k == 1:
             return head
 
-        dummy = ListNode(-1)
-        dummy.next = head
         start, end = head, head
+        dummy = ListNode(0)
+        dummy.next = head
         pre = dummy
-        nt = None
 
-        def reverse(head):
-            if not head or not head.next:
-                return head
+        # 1
 
+        def reverse(start):
+            if not start or not start.next:
+                return start
             pre = None
-            cur = head
-            nt = head.next
+            cur = start
+            nt = cur.next
 
-            while True:
-                if not nt:
-                    cur.next = pre
-                    return cur
+            while nt:
                 cur.next = pre
                 pre = cur
                 cur = nt
                 nt = nt.next
 
+            cur.next = pre
+            return cur
+
         while True:
             for i in range(k - 1):
-                if end and end.next:
+                if end.next:
                     end = end.next
                 else:
                     return dummy.next
-
-            if end and end.next:
+            if end.next:
                 nt = end.next
+                end.next = None
             else:
                 nt = None
-
-            end.next = None
+                end.next = None
+            print("before", dummy, "pre", pre)
             pre.next = reverse(start)
-            if nt:
-                start.next = nt
-                pre = start
-                start = nt
-                end = nt
-
-            else:
-                start.next = None
+            print("after", dummy, "pre", pre)
+            start.next = nt
+            if not nt:
                 return dummy.next
+            else:
+                pre = start
+                start, end = nt, nt
 
