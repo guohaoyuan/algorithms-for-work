@@ -29,7 +29,7 @@ C
 B
 D
 """
-
+# 参看bilibli 25:27
 
 class A(object):
     def __init__(self):
