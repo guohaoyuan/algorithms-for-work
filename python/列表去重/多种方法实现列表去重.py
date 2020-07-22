@@ -15,7 +15,7 @@ print(l2)
 # 利用字典去重
 l1 = [1, 2, 3, 1, 2, 3]
 l2 = {}.fromkeys(l1).keys()
-print(list(l2))
+print(l2, list(l2))
 
 # 利用列表推导
 l1 = [1, 2, 3, 1, 2, 3]
