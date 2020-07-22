@@ -27,12 +27,12 @@ def Bubble2(nums):
     n = len(nums)
 
     for i in range(n):
-        flag = False
+        flag = True
         for j in range(i + 1, n):
             if nums[i] > nums[j]:
                 nums[i], nums[j] = nums[j], nums[i]
-                flag = True
-        if not flag:
+                flag = False
+        if flag:
             break
 
 if __name__ == "__main__":
