@@ -1,9 +1,13 @@
+"""
+插入节点，是插入到表层，然后上升过程
+"""
+
 def MinHeapFixUp(nums, i):
     """
     将新节点i插入到数组nums中,
     新节点i的父节点(i-1)/2
     :param nums:
-    :param i: index需要调整的索引位
+    :param i: 插入位置
     :return:
     """
     # 获得父节点的索引
@@ -21,7 +25,7 @@ def MinHeapFixUp(nums, i):
 
 def Minadd(nums, n, nNum):
     nums.append(nNum)
-    # 添加一个元素，所以是n
+    # 新加的元素在表层，即n
     MinHeapFixUp(nums, n)
 
 

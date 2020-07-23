@@ -32,7 +32,7 @@ def minHeapFixdown(nums, i, n):
 
 def MinHeapDeleteNumber(nums, n):
     nums[0], nums[n - 1] = nums[n - 1], nums[0]
-    # 删除了一个元素所以n - 1
+    # 堆的删除操作，先交换堆顶和表层元素，然后调整0..n-1个元素的堆，n-1表示的是长度
     minHeapFixdown(nums, 0, n - 1)
 
 
