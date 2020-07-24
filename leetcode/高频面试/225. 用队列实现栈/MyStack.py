@@ -73,3 +73,109 @@ class MyStack:
 # param_2 = obj.pop()
 # param_3 = obj.top()
 # param_4 = obj.empty()
+
+
+"""
+在top操作中做了删除操作，不是很好，可以定义一个top全局变量
+"""
+
+
+class MyStack:
+
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        self.queue = collections.deque()
+
+    def push(self, x: int) -> None:
+        """
+        Push element x onto stack.
+        """
+        self.queue.append(x)
+
+    def pop(self) -> int:
+        """
+        Removes the element on top of the stack and returns that element.
+        """
+        size = len(self.queue)
+        for _ in range(size - 1):
+            tmp = self.queue.popleft()
+            self.queue.append(tmp)
+        return self.queue.popleft()
+
+    def top(self) -> int:
+        """
+        Get the top element.
+        """
+        tmp = self.pop()
+        self.queue.append(tmp)
+        return tmp
+
+    def empty(self) -> bool:
+        """
+        Returns whether the stack is empty.
+        """
+        if not self.queue:
+            return True
+        else:
+            return False
+
+
+"""
+属于自己的优化
+"""
+
+
+class MyStack:
+
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        self.queue = collections.deque()
+        self.topx = None
+
+    def push(self, x: int) -> None:
+        """
+        Push element x onto stack.
+        """
+        self.queue.append(x)
+        self.topx = x
+
+    def pop(self) -> int:
+        """
+        Removes the element on top of the stack and returns that element.
+        """
+        size = len(self.queue)
+        for _ in range(size - 1):
+            tmp = self.queue.popleft()
+            self.queue.append(tmp)
+            self.topx = tmp
+        return self.queue.popleft()
+
+    def top(self) -> int:
+        """
+        Get the top element.
+        """
+        # tmp = self.pop()
+        # self.queue.append(tmp)
+        # return tmp
+        print(self.topx)
+        return self.topx
+
+    def empty(self) -> bool:
+        """
+        Returns whether the stack is empty.
+        """
+        if not self.queue:
+            return True
+        else:
+            return False
+
+# Your MyStack object will be instantiated and called as such:
+# obj = MyStack()
+# obj.push(x)
+# param_2 = obj.pop()
+# param_3 = obj.top()
+# param_4 = obj.empty()
