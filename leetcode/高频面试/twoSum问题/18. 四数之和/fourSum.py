@@ -1,3 +1,25 @@
+"""
+四数之和，
+
+1. 特殊情况：数组为空直接返回[]
+2. 初始化res用于存储所有结果
+3. 需要两层遍历
+for i in range(n-3):    # 需要留出三个位置给后三个数
+    需要减枝，去重复,
+    if i > 0 and nums[i] == nums[i-1]: continue
+
+    for j in range(i + 1, n-2):需要留出两个位置给后两个数
+        需要减枝，去重复
+        if j > 0 and nums[j] == nums[j-1]: continue
+
+        利用二分法遍历数组
+        while L <= R:
+            四数之和等于目标，添加至结果。另外要避免重复，如果L++后对应的数与前一位相等，则需要继续后移。（所以说多了重复操作就在这）如果R--前的数与后一位相等，则需要继续前移。
+            四数之和小于目标，L++
+            四数之和大于目标，R--
+
+"""
+
 class Solution:
 
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
