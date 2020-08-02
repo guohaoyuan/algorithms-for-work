@@ -25,7 +25,6 @@ class Solution:
                 if i - coin < 0:    # 此时直接看下一个硬币
                     continue
                 # 利用动态转移方程
-                print(dp)
                 dp[i] = min(dp[i], dp[i - coin] + 1)
 
         return -1 if dp[-1] == amount + 1 else dp[-1]

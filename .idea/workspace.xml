@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="065ab58d-f59f-4506-8ec1-c365b2918302" name="Default Changelist" comment="更新仓库，添加了剑指offer上面关于树的题目" />
+    <list default="true" id="065ab58d-f59f-4506-8ec1-c365b2918302" name="Default Changelist" comment="不太会">
+      <change afterPath="$PROJECT_DIR$/java_tmp/java_tmp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/动态规划/322. 零钱兑换/coinChange.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/动态规划/322. 零钱兑换/coinChange.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/高频面试/动态规划/1143. 最长公共子序列 medium/longestCommonSubsequence.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/高频面试/动态规划/518. 零钱兑换 II medium/change.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/高频面试/岛问题/695. 岛屿的最大面积/maxAreaOfIsland.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/高频面试/树/297. 二叉树的序列化与反序列化 hard/Codec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/高频面试/链表/160. 相交链表/getIntersectionNode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/高频面试/链表/206. 反转链表/reverseList.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offer/树/最近共同祖先/68-1. 二叉搜索树的最近公共祖先/lowestCommonAncestor.py" beforeDir="false" afterPath="$PROJECT_DIR$/offer/树/最近共同祖先/68-1. 二叉搜索树的最近公共祖先/lowestCommonAncestor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,89 +23,75 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/offer/树/26. 树的子结构/isSubStructure.py">
+        <entry file="file://$PROJECT_DIR$/leetcode/高频面试/twoSum问题/18. 四数之和/fourSum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+            <state relative-caret-position="772">
+              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/offer/树/37. 序列化二叉树/Codec.py">
+        <entry file="file://$PROJECT_DIR$/leetcode/回溯问题/78. 子集/subsets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+            <state relative-caret-position="405">
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/offer/树/第k大元素/leetcode 215. 数组中的第K个最大元素/findKthLargest.py">
+        <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/中智行笔试题/实现只有0,1,2三种元素的乱序数组的排序/sort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="88" column="46" lean-forward="true" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/offer/树/第k大元素/54. 二叉搜索树的第k大节点/kthLargest.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/offer/树/55-2. 平衡二叉树/isBalanced.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="630">
+              <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/leetcode/树/236. 二叉树的最近公共祖先/lowestCommonAncestor.py">
+        <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/中智行笔试题/5. 最长回文子串/longestPalindrome.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            <state relative-caret-position="480">
+              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/offer/树/note.py">
+        <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/劲和他的小伙伴们的华为题/78. 子集 已经忘记怎么做了/subsets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/offer/树/8. 二叉树的下一个节点/GetNext.py">
+        <entry file="file://$PROJECT_DIR$/leetcode/回溯问题/77. 组合/combine.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/回溯问题/46. 全排列/permute.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/回溯问题/39. 组合总和/combinationSum.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/leetcode/高频面试/twoSum问题/15. 三数之和/threeSum.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-            </state>
+            <state relative-caret-position="-225" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/offer/树/27. 二叉树的镜像/mirrorTree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/offer/树/28. 对称的二叉树/isSymmetric.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/leetcode/高频面试/twoSum问题/167. 两数之和 II - 输入有序数组/twoSum.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -105,65 +103,83 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dataAugment</find>
+      <find>_rotate_img_bbox</find>
+      <find>save_to_xml</find>
+      <find>clip_image</find>
+      <find>read_original_xml</find>
+      <find>make_layers</find>
+      <find>file_name</find>
+      <find>pre_process</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/offer/数组/双端队列/59-2. 队列的最大值/maxQueue.py" />
-        <option value="$PROJECT_DIR$/offer/动态规划/42. 连续子树组的最大和/maxSubArray.py" />
-        <option value="$PROJECT_DIR$/offer/动态规划/47. 礼物的最大价值/maxValue.py" />
-        <option value="$PROJECT_DIR$/offer/动态规划/63. 股票的最大价值/maxProfit.py" />
-        <option value="$PROJECT_DIR$/offer/动态规划/12. 矩阵中的路径/exist.py" />
-        <option value="$PROJECT_DIR$/offer/回溯法/12. 矩阵中的路径/exist.py" />
-        <option value="$PROJECT_DIR$/offer/贪心算法/14. 捡绳子/cuttingRope.py" />
-        <option value="$PROJECT_DIR$/offer/贪心算法/14-2.捡绳子/cuttingRope.py" />
-        <option value="$PROJECT_DIR$/offer/回溯法/38. 字符串的排列/permutation.py" />
-        <option value="$PROJECT_DIR$/../exception.py" />
-        <option value="$PROJECT_DIR$/leetcode/动态规划/121. 买股票的最佳时机/maxProfit.py" />
-        <option value="$PROJECT_DIR$/leetcode/动态规划/53. 最大子序和/maxSubArray.py" />
-        <option value="$PROJECT_DIR$/leetcode/动态规划/70. 爬楼梯/climbStairs.py" />
-        <option value="$PROJECT_DIR$/leetcode/动态规划/62. 不同路径/uniquePaths.py" />
-        <option value="$PROJECT_DIR$/offer/动态规划/note.py" />
-        <option value="$PROJECT_DIR$/leetcode/动态规划/5. 最长回文子串/longestPalindrome.py" />
-        <option value="$PROJECT_DIR$/offer/树/7. 重建二叉树/buildTree.py" />
-        <option value="$PROJECT_DIR$/offer/树/8. 二叉树的下一个节点/GetNext.py" />
-        <option value="$PROJECT_DIR$/offer/树/26. 树的子结构/isSubStructure.py" />
-        <option value="$PROJECT_DIR$/offer/树/27. 二叉树的镜像/mirrorTree.py" />
-        <option value="$PROJECT_DIR$/offer/树/28. 对称的二叉树/isSymmetric.py" />
-        <option value="$PROJECT_DIR$/offer/树/32-1. 不分行从上到下打印二叉树/levelOrder.py" />
-        <option value="$PROJECT_DIR$/offer/树/32-2. 分行从上到下打印二叉树/levelOrder.py" />
-        <option value="$PROJECT_DIR$/offer/树/32-3. 之字打印二叉树/levelOrder.py" />
-        <option value="$PROJECT_DIR$/offer/树/33. 二叉搜索树的后序遍历序列/verifyPostorder.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/树/110. 平衡二叉树 easy 没有思路/isBalanced.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/数组双指针/剑指 Offer 11. 旋转数组的最小数字 easy/minArray.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/链表/83. 删除排序链表中的重复元素 easy/deleteDuplicates.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/链表/206. 反转链表/reverseList.py" />
+        <option value="$PROJECT_DIR$/python/手写装饰器/计算冒泡排序的装饰器.py" />
+        <option value="$PROJECT_DIR$/python/列表去重/多种方法实现列表去重.py" />
+        <option value="$PROJECT_DIR$/python/一行写出0到100中的偶数/odd.py" />
+        <option value="$USER_HOME$/比赛数据/proc-data/generateXML.py" />
+        <option value="$PROJECT_DIR$/python/type和isinstance/type_isinstance.py" />
+        <option value="$PROJECT_DIR$/python/打印一个100以内的素数/prime.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/offer/树/noe.py" />
-        <option value="$PROJECT_DIR$/offer/回溯法/34. 二叉树中和为某一值的路径/pathSum.py" />
-        <option value="$PROJECT_DIR$/offer/树/37. 序列化二叉树/Codec.py" />
-        <option value="$PROJECT_DIR$/offer/树/54. 二叉搜索树的第k大节点/kthLargest.py" />
-        <option value="$PROJECT_DIR$/offer/树/第k大元素/leetcode 215. 数组中的第K个最大元素/findKthLargest.py" />
-        <option value="$PROJECT_DIR$/offer/树/note.py" />
-        <option value="$PROJECT_DIR$/offer/树/第k大元素/maxDepth.py" />
-        <option value="$PROJECT_DIR$/offer/树/55-2. 平衡二叉树/isBalanced.py" />
-        <option value="$PROJECT_DIR$/leetcode/树/236. 二叉树的最近公共祖先/lowestCommonAncestor.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/algorithms-for-work.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/python/继承/面试题根据mro顺序判断输出.py" />
+        <option value="$PROJECT_DIR$/排序/堆排序/minHeapAddNumber.py" />
+        <option value="$USER_HOME$/GHY/CenterNet-1-bs/src/lib/detectors/base_detector.py" />
+        <option value="$PROJECT_DIR$/排序/堆排序/MinHeapFixdown.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/链表/206. 反转链表 easy递归方法不熟/reverseList.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/堆/1000亿数据找topk.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/堆/剑指 Offer 40. 最小的k个数 会问类似的大数据量的问题/getLeastNumbers.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/56. 合并区间 medium/merge.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/动态规划/300. 最长上升子序列 medium/lengthOfLIS.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/动态规划/322. 零钱兑换 medium/coinChange.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/剑指 Offer 09. 用两个栈实现队列 easy/CQueue.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/232. 用栈实现队列/MyQueue.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/225. 用队列实现栈/MyStack.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/回溯算法/22. 括号生成 medium/generateParenthesis.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/按条件遍历矩阵/spiralOrder.py" />
+        <option value="$PROJECT_DIR$/object detection/nms商汤版本.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/劲和他的小伙伴们的华为题/69. x 的平方根 easy/mySqrt.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/快排，分析时间复杂度，对应的情况/QuickSort.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/142. 环形链表 II medium/detectCycle.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/103. 二叉树的锯齿形层次遍历 medium/zigzagLevelOrder.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/树/94. 二叉树的中序遍历/inorderTraversal.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/215. 数组中的第K个最大元素 medium/findKthLargest.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/206. 反转链表 easy/reverseList.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/1299. 将每个元素替换为右侧最大元素 easy/replaceElements.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/42. 接雨水 hard/trap.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/树/105. 从前序与中序遍历序列构造二叉树/buildTree.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/商汤/往年的面试题/剑指offer 斐波那契，明确要求logn解法 我是没有一点思路/Fibonacci.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/链表/160. 相交链表 easy 但是细节没把握好/getIntersectionNode.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/动态规划/300. 最长上升子序列 medium 没有思路/lengthOfLIS.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/岛问题/695. 岛屿的最大面积/maxAreaOfIsland.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/动态规划/买卖股票问题/122. 买卖股票的最佳时机 II/maxProfit.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/我的面试题/将整数转换成字符串/int2str.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/庆亦的面经/打家劫舍系列/198. 打家劫舍 easy 依旧不会/rob.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/庆亦的面经/打家劫舍系列/213. 打家劫舍 II medium 不会/rob.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/作业帮/辉/一个有序数组，找到和为target的两个数/167. 两数之和 II - 输入有序数组/twoSum.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/twoSum问题/18. 四数之和/fourSum.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/劲和他的小伙伴们的华为题/78. 子集/subsets.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/劲和他的小伙伴们的华为题/78. 子集 已经忘记怎么做了/subsets.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/中智行笔试题/实现只有0,1,2三种元素的乱序数组的排序/sort.py" />
+        <option value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/中智行笔试题/5. 最长回文子串/longestPalindrome.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="524" />
-    <option name="y" value="6" />
-    <option name="width" value="1396" />
-    <option name="height" value="991" />
+    <option name="x" value="264" />
+    <option name="y" value="52" />
+    <option name="width" value="1384" />
+    <option name="height" value="1021" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -180,13 +196,208 @@
             <path>
               <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
-              <item name="offer" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
               <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
-              <item name="offer" type="462c0819:PsiDirectoryNode" />
-              <item name="树" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="回溯问题" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="回溯问题" type="462c0819:PsiDirectoryNode" />
+              <item name="39. 组合总和" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="回溯问题" type="462c0819:PsiDirectoryNode" />
+              <item name="46. 全排列" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="回溯问题" type="462c0819:PsiDirectoryNode" />
+              <item name="77. 组合" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="回溯问题" type="462c0819:PsiDirectoryNode" />
+              <item name="78. 子集" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="回溯问题" type="462c0819:PsiDirectoryNode" />
+              <item name="79. 单词搜索" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="twoSum问题" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="twoSum问题" type="462c0819:PsiDirectoryNode" />
+              <item name="1. 两数之和" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="twoSum问题" type="462c0819:PsiDirectoryNode" />
+              <item name="15. 三数之和" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="twoSum问题" type="462c0819:PsiDirectoryNode" />
+              <item name="18. 四数之和" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="twoSum问题" type="462c0819:PsiDirectoryNode" />
+              <item name="167. 两数之和 II - 输入有序数组" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="twoSum问题" type="462c0819:PsiDirectoryNode" />
+              <item name="653. 两数之和 IV - 输入 BST" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="动态规划" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="动态规划" type="462c0819:PsiDirectoryNode" />
+              <item name="买卖股票问题" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="动态规划" type="462c0819:PsiDirectoryNode" />
+              <item name="买卖股票问题" type="462c0819:PsiDirectoryNode" />
+              <item name="121. 买卖股票的最佳时机" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="动态规划" type="462c0819:PsiDirectoryNode" />
+              <item name="打家劫舍问题" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="动态规划" type="462c0819:PsiDirectoryNode" />
+              <item name="打家劫舍问题" type="462c0819:PsiDirectoryNode" />
+              <item name="198. 打家劫舍" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="动态规划" type="462c0819:PsiDirectoryNode" />
+              <item name="打家劫舍问题" type="462c0819:PsiDirectoryNode" />
+              <item name="213. 打家劫舍 II" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="动态规划" type="462c0819:PsiDirectoryNode" />
+              <item name="打家劫舍问题" type="462c0819:PsiDirectoryNode" />
+              <item name="337. 打家劫舍 III" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="我和我的小伙伴们的面试题" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="我和我的小伙伴们的面试题" type="462c0819:PsiDirectoryNode" />
+              <item name="劲和他的小伙伴们的华为题" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="我和我的小伙伴们的面试题" type="462c0819:PsiDirectoryNode" />
+              <item name="劲和他的小伙伴们的华为题" type="462c0819:PsiDirectoryNode" />
+              <item name="78. 子集 已经忘记怎么做了" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="我和我的小伙伴们的面试题" type="462c0819:PsiDirectoryNode" />
+              <item name="庆亦的面经" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="我和我的小伙伴们的面试题" type="462c0819:PsiDirectoryNode" />
+              <item name="庆亦的面经" type="462c0819:PsiDirectoryNode" />
+              <item name="打家劫舍系列" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithms-for-work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms-for-work" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="高频面试" type="462c0819:PsiDirectoryNode" />
+              <item name="滑动窗口" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -197,7 +408,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tensorflow" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/leetcode/高频面试/滑动窗口" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题" />
+      <recent name="$PROJECT_DIR$/leetcode/高频面试/按条件遍历矩阵/54. 螺旋矩阵 medium" />
+      <recent name="$PROJECT_DIR$/leetcode/高频面试/数组双指针" />
+      <recent name="$PROJECT_DIR$/leetcode/高频面试/单调队列" />
+      <recent name="$PROJECT_DIR$/华为笔试" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/leetcode/高频面试/滑动窗口" />
+      <recent name="$PROJECT_DIR$/leetcode/高频面试" />
+      <recent name="$PROJECT_DIR$/华为笔试" />
+      <recent name="$PROJECT_DIR$/leetcode/链表/虚拟节点" />
+      <recent name="$PROJECT_DIR$/leetcode/bfs" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -211,8 +439,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="buildTree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.sort">
+    <configuration name="Fibonacci" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms-for-work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,11 +448,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/offer/树/7. 重建二叉树" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/商汤/往年的面试题/剑指offer 斐波那契，明确要求logn解法 我是没有一点思路" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/offer/树/7. 重建二叉树/buildTree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/商汤/往年的面试题/剑指offer 斐波那契，明确要求logn解法 我是没有一点思路/Fibonacci.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -233,7 +461,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="climbStairs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="MinHeapsort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms-for-work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -241,11 +469,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/动态规划/70. 爬楼梯" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/排序/堆排序" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/动态规划/70. 爬楼梯/climbStairs.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/排序/堆排序/MinHeapsort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,7 +482,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="longestPalindrome" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="int2str" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms-for-work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,11 +490,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/动态规划/5. 最长回文子串" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/我的面试题/将整数转换成字符串" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/动态规划/5. 最长回文子串/longestPalindrome.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/我的面试题/将整数转换成字符串/int2str.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -275,7 +503,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="面试题根据mro顺序判断输出" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms-for-work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -283,11 +511,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/继承" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/继承/面试题根据mro顺序判断输出.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -296,7 +524,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="uniquePaths" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sort" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithms-for-work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -304,11 +532,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/动态规划/62. 不同路径" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/中智行笔试题/实现只有0,1,2三种元素的乱序数组的排序" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/动态规划/62. 不同路径/uniquePaths.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/中智行笔试题/实现只有0,1,2三种元素的乱序数组的排序/sort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -319,11 +547,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.buildTree" />
-        <item itemvalue="Python.longestPalindrome" />
-        <item itemvalue="Python.uniquePaths" />
-        <item itemvalue="Python.climbStairs" />
+        <item itemvalue="Python.sort" />
+        <item itemvalue="Python.int2str" />
+        <item itemvalue="Python.Fibonacci" />
+        <item itemvalue="Python.MinHeapsort" />
+        <item itemvalue="Python.面试题根据mro顺序判断输出" />
       </list>
     </recent_temporary>
   </component>
@@ -338,41 +566,384 @@
       <option name="presentableId" value="Default" />
       <updated>1590635611172</updated>
     </task>
-    <task id="LOCAL-00001" summary="添加说明">
-      <created>1590636115046</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00064" summary="面试题">
+      <created>1595216297005</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
       <option name="project" value="LOCAL" />
-      <updated>1590636115046</updated>
+      <updated>1595216297005</updated>
     </task>
-    <task id="LOCAL-00002" summary="更新仓库，此时只是做了数组的题">
-      <created>1590636383871</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00065" summary="滑动窗口">
+      <created>1595232232956</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
       <option name="project" value="LOCAL" />
-      <updated>1590636383871</updated>
+      <updated>1595232232956</updated>
     </task>
-    <task id="LOCAL-00003" summary="更新代码段，由空白到完整">
-      <created>1590648495034</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00066" summary="..">
+      <created>1595232998242</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
       <option name="project" value="LOCAL" />
-      <updated>1590648495034</updated>
+      <updated>1595232998242</updated>
     </task>
-    <task id="LOCAL-00004" summary="更新仓库，添加了剑指offer上面关于树的题目">
-      <created>1591148077444</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00067" summary="知道了dummy和pre是共进退的">
+      <created>1595297038771</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
       <option name="project" value="LOCAL" />
-      <updated>1591148077444</updated>
+      <updated>1595297038773</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00068" summary="第一重前一个元素和当前元素相同，跳过特例[0,0,0]输出[0,0,0]">
+      <created>1595298043485</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1595298043486</updated>
+    </task>
+    <task id="LOCAL-00069" summary="最终还是回到了java,所以说只要是在努力，就不会白费">
+      <created>1595299543668</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1595299543668</updated>
+    </task>
+    <task id="LOCAL-00070" summary="一边过">
+      <created>1595300734123</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1595300734123</updated>
+    </task>
+    <task id="LOCAL-00071" summary="判断条件很重要，左指针越过右指针">
+      <created>1595301326633</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1595301326633</updated>
+    </task>
+    <task id="LOCAL-00072" summary="每个节点的贡献度可能为负">
+      <created>1595303182113</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1595303182114</updated>
+    </task>
+    <task id="LOCAL-00073" summary="平衡二叉树的递归需要注意if l == -1">
+      <created>1595304380073</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1595304380073</updated>
+    </task>
+    <task id="LOCAL-00074" summary="一次过很开心，相信自己正在质变">
+      <created>1595381315040</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1595381315040</updated>
+    </task>
+    <task id="LOCAL-00075" summary="一次过">
+      <created>1595381497273</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1595381497273</updated>
+    </task>
+    <task id="LOCAL-00076" summary="一把过">
+      <created>1595382690132</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1595382690132</updated>
+    </task>
+    <task id="LOCAL-00077" summary="手写装饰器">
+      <created>1595400042229</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1595400042229</updated>
+    </task>
+    <task id="LOCAL-00078" summary="对冒泡排序做了小小的修改">
+      <created>1595400629998</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1595400629998</updated>
+    </task>
+    <task id="LOCAL-00079" summary="列表去重">
+      <created>1595402171941</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1595402171941</updated>
+    </task>
+    <task id="LOCAL-00080" summary="一行代码">
+      <created>1595404485401</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1595404485401</updated>
+    </task>
+    <task id="LOCAL-00081" summary="笔试题会考">
+      <created>1595410584898</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1595410584898</updated>
+    </task>
+    <task id="LOCAL-00082" summary="学到了for...else..用法">
+      <created>1595411207763</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1595411207763</updated>
+    </task>
+    <task id="LOCAL-00083" summary="super()的调用顺序看mro">
+      <created>1595430300598</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1595430300598</updated>
+    </task>
+    <task id="LOCAL-00084" summary="微调">
+      <created>1595466716330</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1595466716330</updated>
+    </task>
+    <task id="LOCAL-00085" summary="一定要熟练到极致">
+      <created>1595469938923</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1595469938923</updated>
+    </task>
+    <task id="LOCAL-00086" summary="堆排序还是很重要">
+      <created>1595478172652</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1595478172652</updated>
+    </task>
+    <task id="LOCAL-00087" summary="还算简单">
+      <created>1595502013848</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1595502013848</updated>
+    </task>
+    <task id="LOCAL-00088" summary="还是不够熟">
+      <created>1595506449367</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1595506449367</updated>
+    </task>
+    <task id="LOCAL-00089" summary="凡人之躯比肩神明">
+      <created>1595507178326</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1595507178326</updated>
+    </task>
+    <task id="LOCAL-00090" summary="注意细节">
+      <created>1595579147976</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1595579147976</updated>
+    </task>
+    <task id="LOCAL-00091" summary="不熟悉">
+      <created>1595580621870</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1595580621870</updated>
+    </task>
+    <task id="LOCAL-00092" summary="冲鸭，重重重，浴火重生">
+      <created>1595581612517</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1595581612517</updated>
+    </task>
+    <task id="LOCAL-00093" summary="慢慢来吧">
+      <created>1595582548469</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1595582548469</updated>
+    </task>
+    <task id="LOCAL-00094" summary="还没做">
+      <created>1595598222241</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1595598222241</updated>
+    </task>
+    <task id="LOCAL-00095" summary="重复重复重复">
+      <created>1595599810600</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1595599810601</updated>
+    </task>
+    <task id="LOCAL-00096" summary="一次过">
+      <created>1595641004169</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1595641004169</updated>
+    </task>
+    <task id="LOCAL-00097" summary="continuing....">
+      <created>1595811889735</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1595811889735</updated>
+    </task>
+    <task id="LOCAL-00098" summary="适合自己的才是最好的">
+      <created>1595814568101</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1595814568102</updated>
+    </task>
+    <task id="LOCAL-00099" summary="接雨水，牢记双指针，更新左右最大的水柱高度，然后分别计算左右水柱">
+      <created>1595814680789</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1595814680789</updated>
+    </task>
+    <task id="LOCAL-00100" summary="easy">
+      <created>1595815851899</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1595815851899</updated>
+    </task>
+    <task id="LOCAL-00101" summary="logn,不熟">
+      <created>1595816671784</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1595816671784</updated>
+    </task>
+    <task id="LOCAL-00102" summary="不要膨胀，不断的重复，凡人">
+      <created>1595818188624</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1595818188624</updated>
+    </task>
+    <task id="LOCAL-00103" summary="添加细节">
+      <created>1595820320949</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1595820320949</updated>
+    </task>
+    <task id="LOCAL-00104" summary="这个题在遍历边界和优化空间复杂度上均存在问题">
+      <created>1595821865995</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1595821865995</updated>
+    </task>
+    <task id="LOCAL-00105" summary="不太会">
+      <created>1595822931084</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1595822931084</updated>
+    </task>
+    <task id="LOCAL-00106" summary="lz不稀罕，yingyingying">
+      <created>1595841925529</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1595841925529</updated>
+    </task>
+    <task id="LOCAL-00107" summary="不太会">
+      <created>1596118557459</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1596118557459</updated>
+    </task>
+    <task id="LOCAL-00108" summary="注意无序数组第一次做的时候，没做出来">
+      <created>1596119157092</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1596119157092</updated>
+    </task>
+    <task id="LOCAL-00109" summary="不太会">
+      <created>1596119837691</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1596119837691</updated>
+    </task>
+    <task id="LOCAL-00110" summary="不太会">
+      <created>1596121167555</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1596121167555</updated>
+    </task>
+    <task id="LOCAL-00111" summary="不太会">
+      <created>1596122574671</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1596122574671</updated>
+    </task>
+    <task id="LOCAL-00112" summary="不太会">
+      <created>1596202135291</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1596202135291</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1920" height="1021" extended-state="6" />
+    <frame x="-1" y="-4" width="1922" height="1022" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947257" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24630801" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49894515" weight="0.3504367" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969433" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3220524" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2871179" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010548" side_tool="true" weight="0.3504367" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34546414" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -381,15 +952,15 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32969433" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969433" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3220524" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2871179" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052744" side_tool="true" weight="0.35152838" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -432,267 +1003,312 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加说明" />
-    <MESSAGE value="更新仓库，此时只是做了数组的题" />
-    <MESSAGE value="更新代码段，由空白到完整" />
-    <MESSAGE value="更新仓库，添加了剑指offer上面关于树的题目" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新仓库，添加了剑指offer上面关于树的题目" />
+    <MESSAGE value="super()的调用顺序看mro" />
+    <MESSAGE value="微调" />
+    <MESSAGE value="一定要熟练到极致" />
+    <MESSAGE value="堆排序还是很重要" />
+    <MESSAGE value="还算简单" />
+    <MESSAGE value="还是不够熟" />
+    <MESSAGE value="凡人之躯比肩神明" />
+    <MESSAGE value="注意细节" />
+    <MESSAGE value="不熟悉" />
+    <MESSAGE value="冲鸭，重重重，浴火重生" />
+    <MESSAGE value="慢慢来吧" />
+    <MESSAGE value="还没做" />
+    <MESSAGE value="重复重复重复" />
+    <MESSAGE value="一次过" />
+    <MESSAGE value="continuing...." />
+    <MESSAGE value="适合自己的才是最好的" />
+    <MESSAGE value="接雨水，牢记双指针，更新左右最大的水柱高度，然后分别计算左右水柱" />
+    <MESSAGE value="easy" />
+    <MESSAGE value="logn,不熟" />
+    <MESSAGE value="不要膨胀，不断的重复，凡人" />
+    <MESSAGE value="添加细节" />
+    <MESSAGE value="这个题在遍历边界和优化空间复杂度上均存在问题" />
+    <MESSAGE value="lz不稀罕，yingyingying" />
+    <MESSAGE value="注意无序数组第一次做的时候，没做出来" />
+    <MESSAGE value="不太会" />
+    <option name="LAST_COMMIT_MESSAGE" value="不太会" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/offer/数组/双端队列/59-2. 队列的最大值/maxQueue.py">
+    <entry file="file://$PROJECT_DIR$/object detection/iou.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/object detection/nms.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/object detection/nms商汤版本.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/劲和他的小伙伴们的华为题/69. x 的平方根 easy/mySqrt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/排序/快排/quick_sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/快排，分析时间复杂度，对应的情况/QuickSort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/142. 环形链表 II medium/detectCycle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/103. 二叉树的锯齿形层次遍历 medium/zigzagLevelOrder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/树/94. 二叉树的中序遍历/inorderTraversal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/215. 数组中的第K个最大元素 medium/findKthLargest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/206. 反转链表 easy/reverseList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/排序/冒泡/bubble_sort.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/华为笔试/最少硬币问题/最少硬币问题之硬币数目有限/coinChange.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/42. 接雨水 hard/trap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/树/105. 从前序与中序遍历序列构造二叉树/buildTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/1299. 将每个元素替换为右侧最大元素 easy/replaceElements.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offer/快速幂运算/10. 斐波那契数列/fib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/offer/数组/动态规划/42.连续子数组的最大和/maxSubArray.py">
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/链表/160. 相交链表/getIntersectionNode.py" />
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/商汤/往年的面试题/剑指offer 斐波那契，明确要求logn解法 我是没有一点思路/Fibonacci.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        <state relative-caret-position="720">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/offer/动态规划/42. 连续子树组的最大和/maxSubArray.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/动态规划/47. 礼物的最大价值/maxValue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/动态规划/12. 矩阵中的路径/exist.py" />
-    <entry file="file://$PROJECT_DIR$/offer/贪心算法/14. 捡绳子/cuttingRope.py" />
-    <entry file="file://$PROJECT_DIR$/offer/回溯法/38/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/offer/回溯法/38/ 字符串的排列/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/offer/贪心算法/14-2.捡绳子/cuttingRope.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/回溯法/38. 字符串的排列/permutation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/回溯法/12. 矩阵中的路径/exist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/数组/滑动窗口/59-1. 滑动窗口的最大值/maxSlidingWindow.py">
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/单调队列/.vscode/settings.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ex.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../exception.py">
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/链表/160. 相交链表 easy 但是细节没把握好/getIntersectionNode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/动态规划/121. 买股票的最佳时机/maxProfit.py">
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/动态规划/1143. 最长公共子序列 medium/longestCommonSubsequence.py" />
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/岛问题/695. 岛屿的最大面积/maxAreaOfIsland.py" />
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/动态规划/讲一讲什么是动态规划.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/动态规划/300. 最长上升子序列 medium 没有思路/lengthOfLIS.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/动态规划/53. 最大子序和/maxSubArray.py">
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/动态规划/买卖股票问题/309. 最佳买卖股票时机含冷冻期/maxProfit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+        <state relative-caret-position="210">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/动态规划/70. 爬楼梯/climbStairs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/动态规划/62. 不同路径/uniquePaths.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" column="42" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/动态规划/5. 最长回文子串/longestPalindrome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/动态规划/note.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/动态规划/63. 股票的最大价值/maxProfit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/7. 重建二叉树/buildTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/33. 二叉搜索树的后序遍历序列/verifyPostorder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/32-2. 分行从上到下打印二叉树/levelOrder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/noe.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/回溯法/34. 二叉树中和为某一值的路径/pathSum.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/32-1. 不分行从上到下打印二叉树/levelOrder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/数组/最小的k个数/getLeastNumbers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/数组/40. 最小的k个数/getLeastNumbers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-450" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/32-3. 之字打印二叉树/levelOrder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/28. 对称的二叉树/isSymmetric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/27. 二叉树的镜像/mirrorTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/26. 树的子结构/isSubStructure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/8. 二叉树的下一个节点/GetNext.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/54. 二叉搜索树的第k大节点/kthLargest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/37. 序列化二叉树/Codec.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/第k大元素/leetcode 215. 数组中的第K个最大元素/findKthLargest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="88" column="46" lean-forward="true" selection-start-line="88" selection-start-column="46" selection-end-line="88" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/第k大元素/maxDepth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/第k大元素/54. 二叉搜索树的第k大节点/kthLargest.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/55-2. 平衡二叉树/isBalanced.py">
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/动态规划/买卖股票问题/122. 买卖股票的最佳时机 II/maxProfit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/offer/树/note.py">
+    <entry file="file://$PROJECT_DIR$/排序/堆排序/MinHeapsort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/岛问题/200. 岛屿数量/numIslands.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/动态规划/70. 爬楼梯  easy/climbStairs.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/动态规划/1143. 最长公共子序列 medium 遍历的边界出了问题/longestCommonSubsequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/百度面试题/我的面试题/将整数转换成字符串/int2str.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode/树/236. 二叉树的最近公共祖先/lowestCommonAncestor.py">
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/动态规划/打家劫舍问题/198. 打家劫舍/rob.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/动态规划/打家劫舍问题/213. 打家劫舍 II/rob.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/动态规划/打家劫舍问题/337. 打家劫舍 III/rob.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/庆亦的面经/打家劫舍系列/198. 打家劫舍 easy 依旧不会/rob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/动态规划/买卖股票问题/121. 买卖股票的最佳时机/maxProfit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/庆亦的面经/打家劫舍系列/213. 打家劫舍 II medium 不会/rob.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/作业帮/辉/一个有序数组，找到和为target的两个数/167. 两数之和 II - 输入有序数组/twoSum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/twoSum问题/1. 两数之和/twoSum.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/twoSum问题/167. 两数之和 II - 输入有序数组/twoSum.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/twoSum问题/15. 三数之和/threeSum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/twoSum问题/18. 四数之和/fourSum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/劲和他的小伙伴们的华为题/78. 子集/subsets.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/回溯问题/39. 组合总和/combinationSum.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/回溯问题/46. 全排列/permute.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/回溯问题/77. 组合/combine.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/劲和他的小伙伴们的华为题/78. 子集 已经忘记怎么做了/subsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/回溯问题/78. 子集/subsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/中智行笔试题/实现只有0,1,2三种元素的乱序数组的排序/sort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode/高频面试/我和我的小伙伴们的面试题/中智行笔试题/5. 最长回文子串/longestPalindrome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
         </state>
       </provider>
     </entry>

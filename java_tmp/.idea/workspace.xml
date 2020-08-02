@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9025a578-6b91-42b1-9087-c2eca787e024" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/java_tmp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leetcode/动态规划/322. 零钱兑换/coinChange.py" beforeDir="false" afterPath="$PROJECT_DIR$/../leetcode/动态规划/322. 零钱兑换/coinChange.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leetcode/高频面试/动态规划/买卖股票问题/121. 买卖股票的最佳时机/maxProfit.py" beforeDir="false" afterPath="$PROJECT_DIR$/../leetcode/高频面试/动态规划/买卖股票问题/121. 买卖股票的最佳时机/maxProfit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leetcode/高频面试/动态规划/买卖股票问题/309. 最佳买卖股票时机含冷冻期/maxProfit.py" beforeDir="false" afterPath="$PROJECT_DIR$/../leetcode/高频面试/动态规划/买卖股票问题/309. 最佳买卖股票时机含冷冻期/maxProfit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leetcode/高频面试/讲一讲什么是动态规划.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../offer/树/最近共同祖先/68-1. 二叉搜索树的最近公共祖先/lowestCommonAncestor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../offer/树/最近共同祖先/68-1. 二叉搜索树的最近公共祖先/lowestCommonAncestor.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1eqhvGGh9aKjPShGOlzW26bRJbw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9025a578-6b91-42b1-9087-c2eca787e024" name="Default Changelist" comment="" />
+      <created>1595055258933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595055258933</updated>
+      <workItem from="1595055263906" duration="166000" />
+      <workItem from="1595055448398" duration="48000" />
+      <workItem from="1595055546662" duration="212000" />
+      <workItem from="1595055771632" duration="98000" />
+      <workItem from="1595055931805" duration="6000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="846" y="373" width="226" height="267" key="#Notifications" timestamp="1595055560059">
+      <screen x="0" y="24" width="1920" height="993" />
+    </state>
+    <state x="846" y="373" width="226" height="267" key="#Notifications/0.24.1920.993@0.24.1920.993" timestamp="1595055560059" />
+    <state x="423" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595055680094">
+      <screen x="0" y="24" width="1920" height="993" />
+    </state>
+    <state x="423" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.1920.993@0.24.1920.993" timestamp="1595055680094" />
+    <state x="747" y="250" key="FileChooserDialogImpl" timestamp="1595055834442">
+      <screen x="0" y="24" width="1920" height="993" />
+    </state>
+    <state x="747" y="250" key="FileChooserDialogImpl/0.24.1920.993@0.24.1920.993" timestamp="1595055834442" />
+    <state x="461" y="142" key="SettingsEditor" timestamp="1595055603182">
+      <screen x="0" y="24" width="1920" height="993" />
+    </state>
+    <state x="461" y="142" key="SettingsEditor/0.24.1920.993@0.24.1920.993" timestamp="1595055603182" />
+    <state x="311" y="98" width="1296" height="816" key="new project wizard" timestamp="1595055864014">
+      <screen x="0" y="24" width="1920" height="993" />
+    </state>
+    <state x="311" y="98" width="1296" height="816" key="new project wizard/0.24.1920.993@0.24.1920.993" timestamp="1595055864014" />
+  </component>
+</project>

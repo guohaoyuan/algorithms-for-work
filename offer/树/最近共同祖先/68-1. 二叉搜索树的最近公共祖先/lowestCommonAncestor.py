@@ -23,10 +23,10 @@ class Solution:
         # 2. 递归操作
 
 
-        if root.val < p and root.val < q:
+        if root.val < p.val and root.val < q.val:
             return self.lowestCommonAncestor(root.right, p, q)
 
-        elif root.val > p and root.val > q:
+        elif root.val > p.val and root.val > q.val:
             return self.lowestCommonAncestor(root.left, p, q)
 
         else:
