@@ -7,13 +7,21 @@
     4. 返回res
 """
 
+
 class Solution:
     def replaceElements(self, arr: List[int]) -> List[int]:
         if not arr:
             return []
-        n = len(arr)
-        res = [0] * (n - 1) + [-1]
 
-        for i in range(n-2, -1, -1):
+        n = len(arr)
+        if n == 1:
+            return [-1]
+
+        res = [0] * n
+        res[-1] = -1
+        # for i in range(n-1):
+        #     res[i] = max(arr[i + 1:])
+        # return res
+        for i in range(n - 2, -1, -1):
             res[i] = max(res[i + 1], arr[i + 1])
         return res
