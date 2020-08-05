@@ -158,3 +158,80 @@ class LRUCache:
         如果节点在其中
             无论是否满了，都要先删除对应节点，并删除对应的哈希表关系，然后在添加到double中，并添加哈希表的对应关系    
         """
+
+
+class Node:
+    def __init__(self, key, val):
+        self.val = val
+        self.key = key
+        self.pre = None
+        self.next = None
+
+
+class Double:
+    def __init__(self):
+        self.tail = Node(-1, -1)
+        self.head = Node(-1, -1)
+        self.head.next = self.tail
+        self.tail.pre = self.head
+        self.size = 0
+
+    def addFirst(self, node):
+        node.next = self.head.next
+        node.pre = self.head
+        self.head.next.pre = node
+        self.head.next = node
+        self.size += 1
+
+    def removeLast(self):
+        # if self.size == 0:
+        #     return -1
+        last = self.tail.pre
+        self.remove(last)
+        return last
+
+    def remove(self, node):
+        node.pre.next = node.next
+        node.next.pre = node.pre
+        self.size -= 1
+
+
+class LRUCache:
+
+    def __init__(self, capacity: int):
+        self.hashmap = {}
+        self.double = Double()
+        self.capacity = capacity
+
+    def get(self, key: int) -> int:
+        if key not in self.hashmap:
+            return -1
+        else:
+            val = self.hashmap[key].val
+            self.put(key, val)
+            return val
+
+    def put(self, key: int, value: int) -> None:
+        node = Node(key, value)
+        if key not in self.hashmap:
+            if self.capacity <= self.double.size:
+                # 不在其中但超了
+                last = self.double.removeLast()
+                self.hashmap.pop(last.key)
+                self.double.addFirst(node)
+                self.hashmap[key] = node
+            else:
+                # 不在其中且未超
+                self.hashmap[key] = node
+                self.double.addFirst(node)
+        else:
+            # 在其中
+            self.double.remove(self.hashmap[key])
+            self.hashmap.pop(key)
+            self.hashmap[key] = node
+            self.double.addFirst(node)
+
+# Your LRUCache object will be instantiated and called as such:
+# obj = LRUCache(capacity)
+# param_1 = obj.get(key)
+# obj.put(key,value)
