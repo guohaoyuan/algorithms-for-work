@@ -49,3 +49,38 @@ class Solution:
             # 更新当前长度
             res = max(res, right - left)
         return res
+
+
+"""
+我略纯
+"""
+
+
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        if not s:
+            return 0
+
+        left, right = 0, 0
+        window = collections.defaultdict(int)
+        res = 1
+        match = 0
+
+        while right < len(s):
+            # 移动右指针，试图找到可行解
+            # 当前字符
+            c1 = s[right]
+
+            window[c1] += 1
+            match += 1
+            right += 1
+            while window[c1] == 2:  # 此时是找到可行解，我们在可行解中找最优解
+                # 当前字符
+                c2 = s[left]
+
+                # 我们试图破坏这个可行解
+                window[c2] -= 1
+                match -= 1
+                left += 1
+            res = max(res, match)
+        return res
