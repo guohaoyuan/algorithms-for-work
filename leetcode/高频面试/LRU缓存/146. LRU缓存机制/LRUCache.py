@@ -75,7 +75,7 @@ class DoubleList:
 
     def removeLast(self):
         # 删除链表的最后一个节点,并返回该节点；目的是能够在链表中删除元素,并在哈希表中删除对应元素
-        if self.size == 0:  #### 易错
+        if self.size == 0:  #### 可以删除
             return None
 
         last_node = self.tail.prev
@@ -137,3 +137,24 @@ class LRUCache:
                 self.map.pop(last_node.key)     #### 易错
             self.cache.addFirst(new_item)
             self.map[key] = new_item            #### 易错
+        """
+        易错点：
+        1. 我们使用的节点是key val键值对，
+        2. 哈希表中是key就是输入的key,value是node
+        3. 在执行删除操作记得删除哈希表中的对应关系
+        
+        
+        get(key, value)
+        先创建节点node(key, val)
+        如果节点不再其中，
+            如果容量<=实际double size:    # 满了
+                删除最后一个节点
+                并删除哈希表中的对应关系
+                添加node
+                添加对应关系
+            如果没满：
+                直接添加
+                并添加对应关系
+        如果节点在其中
+            无论是否满了，都要先删除对应节点，并删除对应的哈希表关系，然后在添加到double中，并添加哈希表的对应关系    
+        """
