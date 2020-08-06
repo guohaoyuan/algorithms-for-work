@@ -20,6 +20,7 @@
             (n-k) * logk
 
 """
+import heapq
 
 
 class Solution:
