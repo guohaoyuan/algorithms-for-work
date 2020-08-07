@@ -39,8 +39,7 @@ class Solution:
 
         for i in range(1, n):
             dp[i][0] = max(dp[i - 1][0], dp[i - 1][1] + prices[i])
-            if n > 1:
-                dp[i][1] = max(dp[i - 1][1], dp[i - 2][0] - prices[i])      # 判断语句不用加，因为一开始dp[-1][0]=0
+            dp[i][1] = max(dp[i - 1][1], dp[i - 2][0] - prices[i])      # 判断语句不用加，因为一开始dp[-1][0]=0
         return dp[-1][0]
 
 
