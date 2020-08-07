@@ -34,3 +34,41 @@ class Solution:
 
         depth = helper(root)
         return depth != -1
+
+"""
+凡人的做法
+"""
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def isBalanced(self, root: TreeNode) -> bool:
+        def helper(root):
+            if not root:
+                return 0
+            l = helper(root.left)
+            r = helper(root.right)
+            return max(l, r) + 1
+        res = []
+        if not root:
+            return True
+        def inorder(root):
+            if not root:
+                return
+            inorder(root.left)
+            res.append(root)
+            inorder(root.right)
+        inorder(root)
+        for node in res:
+            if node:
+                l = helper(node.left)
+                r = helper(node.right)
+                tmp = True if abs(l-r) <= 1 else False
+                if tmp is False:
+                    return False
+        return True
