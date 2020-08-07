@@ -20,6 +20,8 @@ class Solution:
         if not root.left and not root.right:
             if sum - root.val == 0:
                 return True
+            else:
+                return False
 
         return self.hasPathSum(root.left, sum - root.val) or \
                self.hasPathSum(root.right, sum - root.val)
