@@ -90,3 +90,90 @@ class Solution:
             big.next = None
 
         return smallHead if smallHead else bigHead
+
+"""
+"""
+
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def partition(self, head: ListNode, x: int) -> ListNode:
+        if not head:
+            return head
+
+        dummy = ListNode(0)
+        p1 = dummy
+        indummy = ListNode(0)
+        tail = ListNode(0)
+        p2 = indummy
+
+        indummy.next = tail
+        cur = head
+
+        while True:
+            node = ListNode(cur.val)
+            if node.val < x:
+                p1.next = node
+                p1 = p1.next
+            else:
+                node.next = tail
+                p2.next = node
+                p2 = p2.next
+            cur = cur.next
+            if not cur:
+                p2.next = None
+                p1.next = indummy.next
+
+                return dummy.next
+"""
+一半原地修改，不改变当前节点的指向，不破坏next指针，就会好转换到cur = cur.next
+"""
+
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def partition(self, head: ListNode, x: int) -> ListNode:
+        if not head:
+            return head
+
+        p1 = None
+        p2 = None
+        res1, res2 = None, None
+        while True:
+            if not head:
+                break
+            if head.val < x:
+                if not p1:
+                    p1 = head
+                    res1 = head
+                else:
+                    p1.next = head
+                    p1 = p1.next
+                head = head.next
+            else:
+                if not p2:
+                    p2 = head
+                    res2 = head
+                else:
+                    p2.next = head
+                    p2 = p2.next
+                head = head.next
+                if not head:
+                    break
+        if not res1:
+            return res2
+        if not res2:
+            return res1
+        p1.next = res2
+        p2.next = None
+        return res1
