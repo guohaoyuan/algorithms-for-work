@@ -24,7 +24,7 @@ class Solution:
             fast = fast.next
 
         while True:
-            if fast and not fast.next:
+            if fast and not fast.next:  # if not fast.next:
                 slow.next = slow.next.next
                 return dummy.next
             else:
