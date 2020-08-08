@@ -128,51 +128,46 @@ class Solution:
 
 class Solution:
     def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
-        if not head or k == 1:
-            return head
+        def reverse(head):
+            if not head or not head.next:
+                return head
 
-        start, end = head, head
-        dummy = ListNode(0)
-        dummy.next = head
-        pre = dummy
-
-        # 1
-
-        def reverse(start):
-            if not start or not start.next:
-                return start
             pre = None
-            cur = start
-            nt = cur.next
+            cur = head
+            nt = head.next
 
-            while nt:
+            while True:
+                if not nt:
+                    cur.next = pre
+                    return cur
                 cur.next = pre
                 pre = cur
                 cur = nt
                 nt = nt.next
 
-            cur.next = pre
-            return cur
+        if not head or not head.next:
+            return head
 
+        if k == 1:
+            return head
+        dummy = ListNode(0)
+        dummy.next = head
+        cur = dummy
+        start = head
+        end = head
         while True:
             for i in range(k - 1):
-                if end.next:
-                    end = end.next
-                else:
+                end = end.next
+                if not end:
+                    cur.next = nt
                     return dummy.next
-            if end.next:
-                nt = end.next
-                end.next = None
-            else:
-                nt = None
-                end.next = None
-            print("before", dummy, "pre", pre)
-            pre.next = reverse(start)
-            print("after", dummy, "pre", pre)
-            start.next = nt
+
+            nt = end.next
+            end.next = None
+            tmp = reverse(start)
+            cur.next = tmp
+            cur = start
+            start, end = nt, nt
             if not nt:
                 return dummy.next
-            else:
-                pre = start
-                start, end = nt, nt
 
