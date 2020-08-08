@@ -29,7 +29,7 @@ class Solution:
 
         while True:
             # cur与nt相等
-            while cur.val == nt.val:
+            if cur.val == nt.val:
                 cur.next = nt.next
                 nt = nt.next
                 # 此时可能nt.next=none
@@ -37,7 +37,7 @@ class Solution:
                     return head
 
             # cur nt不相等
-            while cur.val != nt.val:
+            elif cur.val != nt.val:
                 cur = nt
                 nt = nt.next
                 # 此时nt.next=none
