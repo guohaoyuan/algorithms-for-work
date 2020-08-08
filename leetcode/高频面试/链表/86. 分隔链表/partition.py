@@ -121,7 +121,7 @@ class Solution:
                 p1.next = node
                 p1 = p1.next
             else:
-                node.next = tail
+                node.next = tail    ###### 出问题的就是这一句
                 p2.next = node
                 p2 = p2.next
             cur = cur.next
