@@ -46,3 +46,45 @@ class Solution:
         self.head.left = self.pre
         self.pre.right = self.head
         return self.head
+
+"""
+先存到列表里，在遍历连接
+"""
+
+"""
+# Definition for a Node.
+class Node:
+    def __init__(self, val, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+"""
+
+
+class Solution:
+    def treeToDoublyList(self, root: 'Node') -> 'Node':
+        if not root:
+            return None
+
+        res = []
+
+        def inorder(root):
+            if not root:
+                return
+
+            inorder(root.left)
+            res.append(root)
+            inorder(root.right)
+
+        inorder(root)
+
+        n = len(res)
+        head = res[0]
+        cur = head
+        for i in range(1, n):
+            cur.right = res[i]
+            res[i].left = cur
+            cur = cur.right
+        head.left = cur
+        cur.right = head
+        return head
