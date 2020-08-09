@@ -67,3 +67,39 @@ class Solution:
             if odd.next:
                 even.next = odd.next
                 even = odd.next
+
+"""
+"""
+
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def oddEvenList(self, head: ListNode) -> ListNode:
+        if not head or not head.next:
+            return head
+
+        index = 3  # 第一个节点
+        odd = head
+        even = head.next
+        p1, p2 = odd, even
+        p3 = even.next
+        while True:
+            cur = p3
+            if not cur:
+                p1.next = even
+                p2.next = None
+                return odd
+            if index & 1 == 1:  # odd
+                p1.next = cur
+                p1 = p1.next
+                index += 1
+
+            else:
+                p2.next = cur
+                p2 = p2.next
+                index += 1
+            p3 = p3.next
