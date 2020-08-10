@@ -104,48 +104,37 @@ class Solution:
 
 class Solution:
     def partition(self, head: ListNode, x: int) -> ListNode:
-        # 1. 特殊情况：数组为空
-        if not head:
+        if not head or not head.next:
             return head
 
-        # 2. 定义small,big
-        small, smallHead = None, None
-        big, bigHead = None, None
-        cur = head
-
-        # 3. 算法流程：
-        # 我们在遍历过程更新链表，并连接，类似奇偶链表
-        while cur:
-            if cur.val < x:
-                if not small:
-                    # 第一次遇到小节点，初始化
-                    small = cur
-                    smallHead = cur
+        odd, even = None, None
+        p3 = head  # 主指针，过链表
+        p1 = None
+        p2 = None
+        while True:
+            if p3.val < x:
+                # 初始化左链表
+                if not odd:
+                    odd = p3
+                    p1 = p3
                 else:
-                    # 至少是第二次遇到
-                    small.next = cur
-                    # 更新small 指针
-                    small = cur
-                # 更新当前指针
-                cur = cur.next
+                    p1.next = p3
+                    p1 = p1.next
+                p3 = p3.next
             else:
-                if not big:
-                    # 第一次遇到大节点，初始化
-                    big = cur
-                    bigHead = cur
+                if not even:
+                    even = p3
+                    p2 = p3
                 else:
-                    # 至少是第二次遇到
-                    big.next = cur
-                    big = cur
-                cur = cur.next
-
-        # 此时cur为空
-        if smallHead:
-            # 如果小节点存在
-            small.next = bigHead
-
-        if bigHead:
-            # 如果大节点存在
-            big.next = None
-
-        return smallHead if smallHead else bigHead
+                    p2.next = p3
+                    p2 = p2.next
+                p3 = p3.next
+            if not p3:
+                if p1 and p2:
+                    p2.next = None
+                    p1.next = even
+                    return odd
+                if p1:
+                    return odd
+                if p2:
+                    return even
