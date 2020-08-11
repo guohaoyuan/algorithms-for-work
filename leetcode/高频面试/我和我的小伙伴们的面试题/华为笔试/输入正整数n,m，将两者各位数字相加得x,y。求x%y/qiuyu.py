@@ -4,19 +4,14 @@ input_data = sys.stdin.readline().split()
 nums = [int(x) for x in input_data]
 
 def helper(num):
-    # 特殊情况：输入为0
-    if num == 0:
-        return 0
-
-    # 计算商和余数
-    shang, yu = num // 10, num % 10
     res = 0
-
-    while shang:
+    # 特殊情况：输入为0
+    while True:
+        shang, yu = num // 10, num % 10
         res += yu
         num = shang
-        shang, yu = num // 10, num % 10
-    res += yu
+        if shang == 0:
+            break
     return res
 
 
