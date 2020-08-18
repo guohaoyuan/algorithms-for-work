@@ -138,3 +138,50 @@ class Solution:
                     return odd
                 if p2:
                     return even
+
+"""
+每次都不一样。。。hahaha
+"""
+
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def partition(self, head: ListNode, x: int) -> ListNode:
+        if not head or not head.next:
+            return head
+
+        p1_head, p2_head = None, None
+        p1, p2 = None, None
+        p3 = head
+
+        while p3:
+            if p3.val < x:
+                if not p1:
+                    p1 = p3
+                    p1_head = p1
+                    p3 = p3.next
+                else:
+                    p1.next = p3
+                    p3 = p3.next
+                    p1 = p1.next
+            else:
+                if not p2:
+                    p2 = p3
+                    p2_head = p2
+                    p3 = p3.next
+                else:
+                    p2.next = p3
+                    p3 = p3.next
+                    p2 = p2.next
+        if not p1_head:
+            return p2_head
+        if not p2_head:
+            return p1_head
+        p2.next = None
+        p1.next = p2_head
+        return p1_head
