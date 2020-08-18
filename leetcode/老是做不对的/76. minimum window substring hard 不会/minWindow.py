@@ -51,7 +51,7 @@ class Solution:
             right += 1
 
             # 第二重循环，开始更新左指针
-            while match == len(needs):
+            while match == len(needs):      # 小细节：字符串可能有重复，单哈希表的key不会重复
                 # 满足匹配度，我们更新最优解
                 if right - left < minLen:
                     start = left
