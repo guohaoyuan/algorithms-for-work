@@ -47,3 +47,60 @@ class Solution:
                 p1 = p1.next
                 p2 = p2.next
         return True
+
+"""
+后半部分长短不一，我们取短的就行
+"""
+
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def isPalindrome(self, head: ListNode) -> bool:
+
+        def reverse(head):
+            if not head or not head.next:
+                return head
+
+            pre = None
+            cur = head
+            nt = head.next
+
+            while True:
+                if not nt:
+                    cur.next = pre
+                    return cur
+
+                cur.next = pre
+                pre = cur
+                cur = nt
+                nt = nt.next
+
+        if not head or not head.next:
+            return True
+        slow, fast = head, head
+        while True:
+
+            if not fast or not fast.next:
+                break
+            fast = fast.next.next
+            slow = slow.next
+
+        last = reverse(slow)
+        p1 = head
+        p2 = last  # 长
+        # print(p1)
+        # print(p2)
+
+        while p2:
+
+            if p1.val == p2.val:
+                p1 = p1.next
+                p2 = p2.next
+            else:
+                return False
+        return True
