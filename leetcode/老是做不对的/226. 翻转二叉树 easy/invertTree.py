@@ -47,14 +47,11 @@ class Solution:
 
             for i in range(size):
                 cur = queue.popleft()
-                tmp = cur
-                if cur:
-                    if cur.left or cur.right:
-                        cur.left, cur.right = cur.right, cur.left
-                        if cur.left:
-                            queue.append(cur.left)
-                        if cur.right:
-                            queue.append(cur.right)
+                cur.left, cur.right = cur.right, cur.left
+                if cur.left:
+                    queue.append(cur.left)
+                if cur.right:
+                    queue.append(cur.right)
         return root
 
 
@@ -77,4 +74,35 @@ class Solution:
             return root
 
         root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
+        return root
+"""
+非递归版本
+"""
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+import collections
+
+
+class Solution:
+    def invertTree(self, root: TreeNode) -> TreeNode:
+        if not root:
+            return root
+
+        queue = collections.deque()
+        queue.append(root)
+
+        while queue:
+            size = len(queue)
+            for i in range(size):
+                cur = queue.popleft()
+                cur.left, cur.right = cur.right, cur.left
+                if cur.left:
+                    queue.append(cur.left)
+                if cur.right:
+                    queue.append(cur.right)
         return root
