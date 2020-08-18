@@ -43,3 +43,34 @@ class Solution:
                 # 此时nt.next=none
                 if not nt:
                     return head
+
+
+"""
+小小的修改，看个人情况
+"""
+
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def deleteDuplicates(self, head: ListNode) -> ListNode:
+        if not head or not head.next:
+            return head
+
+        cur = head
+        nt = head.next
+
+        while True:
+            if not nt:
+                return head
+            if cur.val == nt.val:
+                cur.next = nt.next
+                # 更新nt
+                nt = nt.next
+            else:
+                cur = nt
+                nt = nt.next
