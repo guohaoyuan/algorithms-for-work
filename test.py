@@ -90,11 +90,60 @@
 # b = a[1:3]
 # print(a is b)
 
-class Solution:
-    # 1 .
-    instance = False
+# nums = int(input())
+# points = []
+# for i in range(0, nums):
+#     read_list = ''.join(map(str, input().split()))
+#     print(read_list)
+#     # read_list = [int(i) for i in input().split()]
+#     points.append((read_list[0], read_list[1]))
+    # print(points)
 
-    def __new__(cls, *args, **kwargs):
-        if not cls.instance:
-            cls.instance = super().__new__(cls)
-        return cls.instance
+# def a():
+#     try:
+#         return 1
+#     finally:
+#         return 2
+# k = a()
+# print(k)
+
+
+
+
+def longestCommonSubsequence(text1: str, text2: str) -> int:
+    if not text1 or not text1:
+        return 0
+
+    m = len(text1)
+    n = len(text2)
+    # 因为有空字串
+    dp = [[0 for _ in range(n + 1)] for _ in range(m + 1)]
+
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            #  因为ddp table比字符串多一位，dp table中的i,j在字符串中对应索引是i-1,j-1
+            if text1[i - 1] == text2[j - 1]:
+                dp[i][j] = dp[i-1][j-1] + 1
+            else:
+                dp[i][j] = max(max(dp[i-1][j], dp[i][j-1]), dp[i-1][j-1])
+    return dp[-1][-1]
+
+dna_len = int(input())
+dna_nums = []
+for i in range(3):
+    if i == 0:
+        continue
+    dna_nums.append(''.join(map(str, input().split())))
+dna1 = dna_nums[0]
+dna2 = dna_nums[1]
+
+text1 = dna1
+text2 = dna2
+
+dna_longest = longestCommonSubsequence(text1, text2)
+
+similar = dna_longest / dna_len
+similar = round(similar, 2)
+hun = "Yes" if similar <= 0.5 else "No"
+output = str(similar) + ' ' + hun
+print(output)
