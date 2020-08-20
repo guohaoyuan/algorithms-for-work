@@ -32,3 +32,9 @@ class Solution:
         if sum == 0:
             count += 1
         return count + self.calculate(root.left, sum) + self.calculate(root.right, sum)
+
+"""
+从根节点出发有多少种方法使得节点和为sum。
+从左子树出发有多少种方法使得节点和为sum
+从右子树出发有多少种方法使得节点和为sum
+"""
