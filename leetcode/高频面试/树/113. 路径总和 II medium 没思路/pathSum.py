@@ -7,24 +7,24 @@
 
 class Solution:
     def pathSum(self, root: TreeNode, sum: int) -> List[List[int]]:
-
         if not root:
             return []
+
         res = []
         path = []
 
-        def helper1(root, sum, path):
-
+        def helper(root, sum, path):
             if not root:
                 return
-            if not root.left and not root.right:
-                if sum - root.val == 0:
-                    path.append(root.val)
-                    res.append(path)
 
-            helper1(root.right, sum - root.val, path + [root.val])
-            helper1(root.left, sum - root.val, path + [root.val])
+            if not root.left and not root.right and sum - root.val == 0:
+                path.append(root.val)
+                res.append(path[:])
+                return
 
-        helper1(root, sum, path)
+            # 因为必须从根节点出发到叶子节点，所以path和sum都是必须进行更新的
+            helper(root.left, sum - root.val, path + [root.val])
+            helper(root.right, sum - root.val, path + [root.val])
 
+        helper(root, sum, path)
         return res
