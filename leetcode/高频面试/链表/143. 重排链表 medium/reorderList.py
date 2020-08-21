@@ -63,3 +63,54 @@ class Solution:
                 return head
             else:
                 p2_next = p2.next
+
+"""
+新版本更强
+"""
+
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def reorderList(self, head: ListNode) -> None:
+        """
+        Do not return anything, modify head in-place instead.
+        """
+        if not head or not head.next:
+            return head
+
+        slow, fast = head, head
+        while True:
+            if not fast or not fast.next:
+                break
+            slow = slow.next
+            fast = fast.next.next
+        new_head = slow.next
+        slow.next = None
+
+        def reverse(head):
+            if not head or not head.next:
+                return head
+
+            last = reverse(head.next)
+            head.next.next = head
+            head.next = None
+            return last
+
+        last = reverse(new_head)
+        p1 = head
+        p2 = last
+
+        while p2:
+            # 下一位
+            p1_nt = p1.next
+            p2_nt = p2.next
+            # 改指向
+            p1.next = p2
+            p2.next = p1_nt
+            p1 = p1_nt
+            p2 = p2_nt
+        return head
