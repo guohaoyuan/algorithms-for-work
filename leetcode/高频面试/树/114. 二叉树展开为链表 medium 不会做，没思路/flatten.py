@@ -28,3 +28,7 @@ class Solution:
             helper(right)
 
         helper(root)
+
+"""
+类似leetcode114
+"""
