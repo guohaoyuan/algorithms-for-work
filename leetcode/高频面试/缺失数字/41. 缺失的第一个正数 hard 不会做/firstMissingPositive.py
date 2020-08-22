@@ -41,20 +41,22 @@ class Solution:
 """
 仔细考虑了交换原理
 """
+
+
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
         if not nums:
             return 1
-        n = len(nums)
-        for i in range(n):
-            while nums[i] >= 1 and nums[i] <= n and nums[i] != nums[nums[i] - 1]:
-                tmp = nums[i]
-                # nums[tmp-1],nums[i] = nums[i], nums[tmp-1]
-                nums[i], nums[tmp-1] = nums[tmp-1], nums[i]
-        for i in range(n):
-            if nums[i]-1 != i:
-                return i+1
-        return n + 1
+
+        for i in range(len(nums)):
+            while nums[i] >= 1 and nums[i] <= len(nums) and nums[nums[i] - 1] != nums[i]:
+                #
+                nums[nums[i] - 1], nums[i] = nums[i], nums[nums[i] - 1]
+        # 解决[6, 7], [1, 2, 0]
+        for i in range(len(nums)):
+            if i != nums[i] - 1:
+                return i + 1
+        return len(nums) + 1  # [1, 2, 3]
 if __name__ == '__main__':
     nums = [3,4,-1,1]
     nums2 = [1, 2, 0]
