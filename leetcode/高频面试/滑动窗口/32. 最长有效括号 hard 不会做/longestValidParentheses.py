@@ -32,33 +32,30 @@ return max_len
 
 class Solution:
     def longestValidParentheses(self, s: str) -> int:
+        #   (   )   (   (   (   )   )
         if not s:
             return 0
-
-        left, right = 0, 0
-        n = len(s)
         max_len = 0
-
-        for c in s:
-            if c == '(':
+        left, right = 0, 0
+        for i in range(len(s)):
+            if s[i] == '(':
                 left += 1
-            if c == ")":
+            else:
                 right += 1
             if right > left:
+                # )()
                 left, right = 0, 0
-            if right == left:
-                max_len = max(max_len, left * 2)
-            # 所以当left > right容易出问题
+            if left == right and max_len < 2*left:
+                # 此时八成是匹配了
+                max_len = left*2
         left, right = 0, 0
-        for i in range(len(s) - 1, -1, -1):
-            c = s[i]
-            if c == '(':
+        for i in range(len(s)-1, -1, -1):
+            if s[i] == '(':
                 left += 1
-            if c == ')':
+            else:
                 right += 1
-
             if left > right:
                 left, right = 0, 0
-            if left == right:
-                max_len = max(max_len, left * 2)
+            if left == right and max_len < 2*left:
+                max_len = left*2
         return max_len
