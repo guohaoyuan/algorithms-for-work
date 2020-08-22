@@ -15,35 +15,38 @@
 
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
+        # 保证Nums1是较短的那一个
         if len(nums1) > len(nums2):
             nums1, nums2 = nums2, nums1
 
-        m, n = len(nums1), len(nums2)
+        m = len(nums1)
+        n = len(nums2)
 
         totalLeft = (m + n + 1) // 2
 
-        left, right = 0, m
-
-        while left < right:
-            i = (left + right) // 2
+        # 开始二分法，改变搜索区间的条件：要求交叉关系：
+        #   nums1[i-1] <= nums2[j];nums[j-1] <= nums1[i]
+        L, R = 0, len(nums1)
+        while L < R:
+            i = (L + R) >> 1
             j = totalLeft - i
-            if nums2[j - 1] > nums1[i]:
-                # 搜索区间[i+1, right]
-                # left = i + 1 不会导致陷入死循环
-                left = i + 1
+            if nums1[i] < nums2[j - 1]:
+                # 为了保证nums1[i] >= nums2[j-1]，搜索区间为[i+1, R]
+                L = i + 1
             else:
-                # 搜索区间[left, i]
-                right = i
+                # 此时，nums[i] >= nums2[j-1], 因为有可能已经满足条件。搜索区间[L, i]
+                R = i
 
-        i = left
+        # 此时L == R,更新i和j
+        i = L
         j = totalLeft - i
-        # 存在四种特殊情况，即，nums1的分割线在最右侧或者最左侧;nums2的分割线在最右侧或者最左侧
-        nums1LeftMax = nums1[i - 1] if i > 0 else -float('inf')
-        nums1RightMin = nums1[i] if i < m else float('inf')
-        nums2LeftMax = nums2[j - 1] if j > 0 else -float('inf')
-        nums2RightMin = nums2[j] if j < n else float('inf')
+        # 但是有四种可能的特殊情况,比如,nums1的分割线在最左边，此时i=0,i-1<0. nums1的分割线在最右边，此时i=n,i-1<n.
+        nums1Left = nums1[i - 1] if i > 0 else -float('inf')  # 因为我们要找左边的最大值，所以去负无穷
+        nums1Right = nums1[i] if i < m else float('inf')  # 因为我们要找右边最小值，所以取正无穷
+        nums2Left = nums2[j - 1] if j > 0 else -float('inf')
+        nums2Right = nums2[j] if j < n else float('inf')
 
-        if (m + n) & 1 == 1:
-            return max(nums1LeftMax, nums2LeftMax)
-        else:
-            return (max(nums2LeftMax, nums1LeftMax) + min(nums1RightMin, nums2RightMin)) / 2
+        if (m + n) & 1 == 1:  # 奇数，中间一个数，取左边的最大值
+            return max(nums1Left, nums2Left)
+        else:  # 偶数，两数之和、、2
+            return (max(nums1Left, nums2Left) + min(nums1Right, nums2Right)) / 2
