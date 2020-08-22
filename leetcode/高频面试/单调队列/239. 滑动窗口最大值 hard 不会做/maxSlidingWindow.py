@@ -41,3 +41,48 @@ class Solution:
                 res.append(windows.max_())
                 windows.pop(nums[i - k + 1])
         return res
+
+"""
+"""
+
+import collections
+
+
+class MonoQueue:
+    def __init__(self):
+        self.queue = collections.deque()
+
+    def push(self, x):
+        # 单调队列
+        if not self.queue:
+            self.queue.append(x)
+        else:
+            while self.queue and self.queue[-1] < x:
+                # 压扁弱鸡
+                self.queue.pop()
+            self.queue.append(x)
+
+    def max(self):
+        return self.queue[0]
+
+    def pop(self, x):
+        if self.queue[0] == x:
+            self.queue.popleft()
+
+
+class Solution:
+    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+        mono = MonoQueue()
+        queue = mono
+        if not nums:
+            return []
+        res = []
+        for i in range(k - 1):
+            queue.push(nums[i])
+
+        for i in range(k - 1, len(nums)):
+            queue.push(nums[i])
+            res.append(queue.max())
+            index = i - k + 1
+            queue.pop(nums[i - k + 1])
+        return res
