@@ -34,7 +34,39 @@ class Solution:
         return count + self.calculate(root.left, sum) + self.calculate(root.right, sum)
 
 """
-从根节点出发有多少种方法使得节点和为sum。
-从左子树出发有多少种方法使得节点和为sum
-从右子树出发有多少种方法使得节点和为sum
+计算出从一个节点出发的方法数。
+然后遍历整个树，计算每个节点的方法数，相加
+爸爸我太牛比了，我自创新作法，哈哈哈
 """
+
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def pathSum(self, root: TreeNode, sum: int) -> int:
+        res = [0]
+
+        def countMethod(root, sum):
+            if not root:
+                return 0
+            count = 0
+            if sum - root.val == 0:
+                count += 1
+            return count + countMethod(root.left, sum - root.val) + countMethod(root.right, sum - root.val)
+
+        def helper(root, sum):
+            if not root:
+                return
+            helper(root.left, sum)
+            res[0] = res[0] + countMethod(root, sum)
+            helper(root.right, sum)
+
+        if not root:
+            return 0
+
+        helper(root, sum)
+        return res[0]
