@@ -58,5 +58,6 @@ class Solution:
             tmp = pre - k
             if tmp in hashmap:
                 count += hashmap[tmp]
+            # 只有后更新hashmap才能保证，j...i这样的和sum_i-k=sum_j,且j<i。
             hashmap[pre] += 1
         return count
