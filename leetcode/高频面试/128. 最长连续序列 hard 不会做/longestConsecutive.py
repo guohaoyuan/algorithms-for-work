@@ -57,3 +57,32 @@ class Solution:
                 hashmap[num - l] = cur_len
                 hashmap[num + r] = cur_len
         return max_len
+
+"""
+自适应修改
+"""
+
+import collections
+
+
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        if not nums:
+            return 0
+
+        hashmap = collections.defaultdict(int)
+        max_len = 1
+        for num in nums:
+            if num in hashmap:
+                continue
+            l = hashmap.get(num - 1, 0)
+            r = hashmap.get(num + 1, 0)
+            cur = l + r + 1
+
+            # 更新hashmap
+            hashmap[num] = cur
+            hashmap[num - l] = cur
+            hashmap[num + r] = cur
+            if max_len < cur:
+                max_len = cur
+        return max_len
