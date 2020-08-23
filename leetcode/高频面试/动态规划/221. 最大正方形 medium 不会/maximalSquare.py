@@ -33,3 +33,34 @@ class Solution:
                         max_len = dp[i][j]
         area = max_len * max_len
         return area
+
+"""
+做了小小的自适应
+"""
+
+
+class Solution:
+    def maximalSquare(self, matrix: List[List[str]]) -> int:
+        # dp[i][j]表示当前位置的边长
+        # dp[i][j] = min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]) + 1
+        #          = 第一行第一列均是保持原值
+        max_len = 0
+        if not matrix:
+            return 0
+        m = len(matrix)
+        n = len(matrix[0])
+        dp = [[0 for _ in range(n)] for _ in range(m)]
+        for i in range(m):
+            dp[i][0] = int(matrix[i][0])
+
+        for j in range(n):
+            dp[0][j] = int(matrix[0][j])
+        for i in range(m):
+            for j in range(n):
+                if int(matrix[i][j]) == 0:
+                    continue
+                if i > 0 and j > 0 and int(matrix[i][j]) == 1:
+                    dp[i][j] = min(int(dp[i][j - 1]), int(dp[i - 1][j - 1]), int(dp[i - 1][j])) + 1
+                if max_len < dp[i][j]:
+                    max_len = dp[i][j]
+        return max_len * max_len
