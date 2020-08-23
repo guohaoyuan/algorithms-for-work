@@ -235,3 +235,109 @@ class LRUCache:
 # obj = LRUCache(capacity)
 # param_1 = obj.get(key)
 # obj.put(key,value)
+
+"""
+"""
+
+
+class Node:
+    def __init__(self, key, value):
+        self.key = key
+        self.value = value
+        self.next = None
+        self.pre = None
+
+
+class DoubleList:
+    def __init__(self):
+        self.head = Node(0, 0)
+        self.tail = Node(0, 0)
+        self.head.next = self.tail
+        self.tail.pre = self.head
+        self.size = 0
+
+    def addFirst(self, node):
+        tmp = self.head.next
+        node.next = tmp
+        node.pre = self.head
+        self.head.next = node
+        tmp.pre = node
+        self.size += 1
+
+    def removeLast(self):
+        if self.size == 0:
+            return None
+        tmp = self.tail.pre
+        tmp.pre.next = self.tail
+        self.tail.pre = tmp.pre
+        tmp.next = None
+        tmp.pre = None
+        self.size -= 1
+        return tmp
+
+    def remove(self, node):
+        if self.size == 0:
+            return
+        node.pre.next = node.next
+        node.next.pre = node.pre
+        node.next = None
+        node.pre = None
+        self.size -= 1
+
+
+class LRUCache:
+
+    def __init__(self, capacity: int):
+        self.doubleList = DoubleList()
+        self.hashmap = {}
+        self.capacity = capacity
+
+    def get(self, key: int) -> int:
+        if key not in self.hashmap:
+            return -1
+        tmp = self.hashmap[key]
+        self.put(tmp.key, tmp.value)
+        return tmp.value
+
+    def put(self, key: int, value: int) -> None:
+        # 创建节点
+        node = Node(key, value)
+        # 该节点不在哈希表中
+        if key not in self.hashmap:
+            # 此时没满
+            if self.capacity > self.doubleList.size:
+                # 加入到哈希表
+                self.doubleList.addFirst(node)
+                self.hashmap[key] = node
+
+            else:
+                # 满了
+                tmp = self.doubleList.removeLast()
+                # 删除对应关系
+                self.hashmap.pop(tmp.key)
+                # 加入哈希表
+                self.doubleList.addFirst(node)
+                self.hashmap[key] = node
+        else:  # 该节点在哈希表中
+            if self.capacity > self.doubleList.size:
+                # 满了
+                # 首先删除该节点
+                tmp = self.hashmap[key]
+                self.doubleList.remove(tmp)
+                self.hashmap.pop(tmp.key)
+                # 添加节点
+                self.doubleList.addFirst(node)
+                self.hashmap[key] = node
+            else:
+                # 没有满，直接添加
+                # 首先删除
+                tmp = self.hashmap[key]
+                self.doubleList.remove(tmp)
+                self.hashmap.pop(tmp.key)
+                # 添加
+                self.doubleList.addFirst(node)
+                self.hashmap[key] = node
+# Your LRUCache object will be instantiated and called as such:
+# obj = LRUCache(capacity)
+# param_1 = obj.get(key)
+# obj.put(key,value)
