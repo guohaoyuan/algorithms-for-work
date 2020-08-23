@@ -49,3 +49,24 @@ class Solution:
             return True
         else:
             return False
+
+"""
+优化逻辑
+"""
+
+class Solution:
+    def isStraight(self, nums: List[int]) -> bool:
+        # 两个充分条件
+        # 除去大小王，max_-min_ < 5
+        # 除去大小王，不许重复出现
+        repeat = set()
+        max_, min_ = -float('inf'), float('inf')
+        for num in nums:
+            if num != 0:
+                if num not in repeat:
+                    repeat.add(num)
+                else:
+                    return False
+                max_ = max(max_, num)
+                min_ = min(min_, num)
+        return True if max_ - min_ < 5 else False
