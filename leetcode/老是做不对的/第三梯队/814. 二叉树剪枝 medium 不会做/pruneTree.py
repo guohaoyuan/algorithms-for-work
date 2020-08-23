@@ -32,6 +32,6 @@ class Solution:
             if not r:
                 root.right = None
 
-            return root.val == 1 or l or r
+            return root.val == 1 or l or r  # 必须都需要减枝，才减枝
 
         return root if helper(root) else None
