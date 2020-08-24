@@ -26,7 +26,7 @@ class Solution:
 
         # 开始二分法，改变搜索区间的条件：要求交叉关系：
         #   nums1[i-1] <= nums2[j];nums[j-1] <= nums1[i]
-        L, R = 0, len(nums1)
+        L, R = 0, len(nums1)    # 这个小细节考虑了，其中一个为空的情况，实属牛逼
         while L < R:
             i = (L + R) >> 1
             j = totalLeft - i
