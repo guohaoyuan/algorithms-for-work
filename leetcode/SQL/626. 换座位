@@ -1,0 +1,7 @@
+--select count(distinct id) from seat; 统计的id的数目
+select
+    if(id%2=0, id-1, if(id=(select count(distinct id) from seat), id, id+1))
+    as id, student
+from seat
+order by id;
+--如果是偶数就-1;如果是奇数就-1.但是如果奇数位是最后一个奇数，则不加不减
