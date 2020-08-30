@@ -1,0 +1,5 @@
+--# Write your MySQL query statement below
+--返回左表中的所有行即使在右表中诶有匹配
+select FirstName, LastName, City, State
+from Person left join Address
+on Person.PersonId = Address.PersonId;

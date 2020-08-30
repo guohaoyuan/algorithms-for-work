@@ -1,0 +1,6 @@
+--# Write your MySQL query statement below
+select a.Id
+from Weather as a
+cross join Weather as b
+    on datediff(a.RecordDate, b.RecordDate)=1
+where a.Temperature > b.Temperature;

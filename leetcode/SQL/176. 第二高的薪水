@@ -1,0 +1,8 @@
+--limit start, num 表示从start对应数据开始到第start+num条数据
+select ifNull(
+    (select distinct Salary
+    from Employee
+    order by Salary Desc
+    limit 1, 1),
+    null
+) as SecondHighestSalary;

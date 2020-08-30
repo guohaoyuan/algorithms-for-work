@@ -1,0 +1,5 @@
+--# Write your MySQL query statement below
+--dense_rank()并列第一名的连续排名
+select Score,
+    dense_rank() over(order by Score desc) as `Rank`
+from Scores;

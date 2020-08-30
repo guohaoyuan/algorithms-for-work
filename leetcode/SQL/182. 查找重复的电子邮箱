@@ -1,0 +1,6 @@
+--# Write your MySQL query statement below
+-- group by 进行分组聚合;having对分组结果进行过滤
+select Email
+from Person
+group by Email
+having count(Email) > 1;
