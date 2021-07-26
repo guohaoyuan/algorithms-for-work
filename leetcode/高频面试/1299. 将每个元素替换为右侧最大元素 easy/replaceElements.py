@@ -29,3 +29,29 @@ class Solution:
         for i in range(n - 2, -1, -1):
             res[i] = max(res[i + 1], arr[i + 1])
         return res
+
+"""
+做优化
+"""
+class Solution(object):
+    def replaceElements(self, arr):
+        """
+        :type arr: List[int]
+        :rtype: List[int]
+        """
+        # 1. 特殊情况：数组长度为0或者1
+        n = len(arr)
+        if n == 0:
+            return []
+        elif n == 1:
+            return [-1]
+        
+        # 2. 初始化返回结果res
+        res = [0] * n
+        res[-1] = -1 
+
+        # 3. 倒数第二位遍历数组，并更新res
+        for i in range(n - 2, -1, -1):
+            res[i] = max(res[i + 1], arr[i + 1])
+        
+        return res
