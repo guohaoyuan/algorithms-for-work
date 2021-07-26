@@ -67,11 +67,15 @@ import collections
 
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
+        # 1. 考虑特殊情况
         if not nums:
             return 0
 
         hashmap = collections.defaultdict(int)
-        max_len = 1
+        max_len = 0
+        # 2. 算法流程：如果在nums中的数字num重复，则直接跳过
+        #             否则，查看该数字相邻的两个元素是否在哈希表中，并计算当前位置的长度
+        #             更新边界长度，以及当前元素长度
         for num in nums:
             if num in hashmap:
                 continue
@@ -86,3 +90,4 @@ class Solution:
             if max_len < cur:
                 max_len = cur
         return max_len
+    
