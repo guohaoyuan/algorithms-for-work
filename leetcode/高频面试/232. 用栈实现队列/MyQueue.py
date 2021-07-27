@@ -3,13 +3,10 @@
     直接入栈
 
 对于peek（）方法
-    当stack2为空
-        当stack1不为空
-            将stack1元素移到stack2
-    返回stack2的栈顶元素，就是队列的头部
+    # 如果stack2不为空，则直接返回stack2[-1]；否则需要将stack1元素转移到stack2
 
 对于pop()方法
-    先调用peek（）方法，实现两个队列的协调
+    在弹出之前，先执行peek操作，以保证stack2存在元素
     直接删除stack2的栈顶元素，就是队列的头部
 
 对于empty()方法
