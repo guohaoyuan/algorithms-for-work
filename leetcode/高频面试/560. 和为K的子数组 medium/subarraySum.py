@@ -40,7 +40,7 @@
 比如
     nums:   3   4   7   2   -3  1   4   2
     pre:0   3   7   14  16  13  14  18  20
-    pre-:  1   5   12  14  11  12  16  18
+    pre-k:  1   5   12  14  11  12  16  18
 2. 遍历数组nums,如果当前nums[i]-k存在于hashmap中，则count+=hashmap[pre-2]
     否则，向哈希表中添加新值或者加1.可以利用defaultdict(int)
 3. 最后返回count
