@@ -8,16 +8,15 @@
         r_max = max(r_max, height[R])
 
 
-        找到较小的l_max r_max计算当前位置的雨水
+        # 找到较小的l_max，该短板将决定左侧的积水量
         if l_max <= r_max:
             res += l_max - height[L]
             L += 1
+        # 找到较小的r_max，该短板将决定右侧的积水量
         else:
             res += r_max - height[R]
             R -= 1
 4. return res
-
-"""
 
 class Solution:
     def trap(self, height: List[int]) -> int:
