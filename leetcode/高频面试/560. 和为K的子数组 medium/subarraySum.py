@@ -41,6 +41,14 @@
     nums:   3   4   7   2   -3  1   4   2
     pre:0   3   7   14  16  13  14  18  20
     pre-k:  1   5   12  14  11  12  16  18
+    
+计算完包括了当前数前缀和以后，我们去查一查在当前数之前，有多少个前缀和等于 preSum - k 呢？
+这是因为满足 preSum - (preSum - k) == k 的区间的个数是我们所关心的
+
+作者：liweiwei1419
+链接：https://leetcode-cn.com/problems/subarray-sum-equals-k/solution/bao-li-jie-fa-qian-zhui-he-qian-zhui-he-you-hua-ja/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 2. 遍历数组nums,如果当前nums[i]-k存在于hashmap中，则count+=hashmap[pre-2]
     否则，向哈希表中添加新值或者加1.可以利用defaultdict(int)
 3. 最后返回count
