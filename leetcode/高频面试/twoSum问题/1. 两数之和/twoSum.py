@@ -1,21 +1,25 @@
 """
-使用哈希表： 空间换时间
-
+# 1. 创建一个哈希表，
+# 2. 遍历数组nums，如果target-nums[i] 不在哈希表中，则将nums[i]加入哈希表作为key，value设为index
+# 3. 在遍历过程中，出现target - nums[i] 在哈希表的情况，返回[i, hashmap[target-nums[i]]]
 """
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # 1. 特殊情况：数组为空
+
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
         if not nums:
             return []
-
-        # 2. 初始化哈希表
+        
         hashmap = {}
-        n = len(nums)
 
-        # 3. 算法流程
-        for i in range(n):
-            # 如果目标和当前数的差不再hash中，添加当前数
+        for i in range(len(nums)):
             if target - nums[i] not in hashmap:
                 hashmap[nums[i]] = i
             else:
-                return [i, hashmap[target - nums[i]]]
+                return [hashmap[target-nums[i]], i]
+
+        return []
