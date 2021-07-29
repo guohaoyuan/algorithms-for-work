@@ -54,18 +54,29 @@
 3. 最后返回count
 """
 
-import collections
-class Solution:
-    def subarraySum(self, nums: List[int], k: int) -> int:
-        hashmap = collections.defaultdict(int)
-        hashmap[0] = 1
-        count = 0
-        pre = 0
-        for i in range(len(nums)):
-            pre += nums[i]
-            tmp = pre - k
-            if tmp in hashmap:
-                count += hashmap[tmp]
-            # 只有后更新hashmap才能保证，j...i这样的和sum_i-k=sum_j,且j<i。
-            hashmap[pre] += 1
-        return count
+class Solution(object):
+    def subarraySum(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        # 1. 初始化前缀和字典，一开始还没有遍历数组nums，所以前缀和初始化为0:1
+        sum_dict = collections.defaultdict(int)
+        sum_dict[0] = 1
+        # 初始化返回结果与前缀和
+        res = 0
+        pre_sum = 0
+
+        # 2. 遍历数组nums，更新前缀和
+        for num in nums:
+            pre_sum += num
+            
+            # 如果前缀和-k 在字典中，则说明截断下来的子数组是满足和为k的
+            if pre_sum - k in sum_dict:
+                # 进行计数
+                res += sum_dict[pre_sum - k]
+            # 添加前缀和到字典中
+            sum_dict[pre_sum] += 1
+
+        return res
