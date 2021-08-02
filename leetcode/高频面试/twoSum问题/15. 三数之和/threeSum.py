@@ -67,3 +67,63 @@ class Solution:
                 elif nums[i] + nums[L] + nums[R] > 0:
                     R -= 1
         return res
+    
+    
+    
+ """
+1. 考虑特殊情况，数组长度低于3，则直接返回空列表。初始化res=[]
+2. 对数组进行排序
+3. 第一层for循环，用于定位三数之和的a，遍历数组，
+    4. 如果数组当前位置元素nums[i]>0，则直接返回
+    5. 如果当前a=nums[i]和前一个a=nums[i-1]相等，则i后移一位.
+    注释：i - 1表示我已经计算过i-1的情况，如果当前的i重复则直接跳过
+         i + 1表示我还没计算i但是我直接后移不正确，因为a=nums[i]和b=nums[i+1]可能相等也是一种情况
+    6.初始化b=L=i+1，c=R-1两个数.
+    7. 开始利用双指针的方式查找a+b+c=0.
+        8. sum_ == 0时候，需要对b c进行去重复。因为R+1会越界，所以使用R - 1 L + 1
+        9. 其余情况无需去重复，因为只要a不一样，bc无所谓一样与否
+"""
+
+class Solution(object):
+    def threeSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        res = []
+        n = len(nums)
+        if n < 3:
+            return res
+
+        nums.sort()
+
+        for i in range(n):
+            a = nums[i]
+            if a > 0:
+                return res
+            
+            if i> 0 and nums[i] == nums[i - 1]:
+                continue
+
+            L = i + 1
+            R = n - 1
+            
+            while L < R:
+                b = nums[L]
+                c = nums[R]
+                sum_ = a + b + c
+                if sum_ == 0:
+                    res.append([a, b, c])
+                    while L < R and nums[L] == nums[L + 1]:
+                        L += 1
+                    while R > L and nums[R] == nums[R - 1]:
+                        R -= 1
+                    
+                    
+                    L += 1
+                    R -= 1
+                elif sum_ > 0:
+                    R -= 1
+                else:
+                    L += 1
+        return res
