@@ -11,15 +11,11 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        if not nums:
-            return []
-        
-        hashmap = {}
+        hashmap = {}    # key : val = nums[i] : index
 
-        for i in range(len(nums)):
-            if target - nums[i] not in hashmap:
-                hashmap[nums[i]] = i
+        for i, num in enumerate(nums):
+            diff = target - num
+            if not hashmap or diff not in hashmap:
+                hashmap[num] = i
             else:
-                return [hashmap[target-nums[i]], i]
-
-        return []
+                return [hashmap[diff], i]
