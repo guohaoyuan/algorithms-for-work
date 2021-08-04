@@ -12,29 +12,41 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
-    def findTarget(self, root: TreeNode, k: int) -> bool:
-        res = []
-
-        def helper(root, res):
-            if not root:
-                return res
-
-            helper(root.left, res)
-            res.append(root.val)
-            helper(root.right, res)
+class Solution(object):
+    
+    def middle_order(self, root, res):
+        if not root:
             return res
+        
+        self.middle_order(root.left, res)
+        res.append(root.val)
+        self.middle_order(root.right, res)
 
-        res = helper(root, res)
-        if len(res) < 2:
+        return res
+    
+    def findTarget(self, root, k):
+        """
+        :type root: TreeNode
+        :type k: int
+        :rtype: bool
+        """
+        res = []
+        res = self.middle_order(root, res)
+        n = len(res)
+
+        if n < 2:
             return False
-        L, R = 0, len(res) - 1
+        
+        L = 0
+        R = n - 1
 
         while L < R:
-            if res[L] + res[R] == k:
+            sum_two = res[L] + res[R]
+            if sum_two== k:
                 return True
-            elif res[L] + res[R] > k:
+            elif sum_two > k:
                 R -= 1
-            elif res[L] + res[R] < k:
+            else:
                 L += 1
+        
         return False
