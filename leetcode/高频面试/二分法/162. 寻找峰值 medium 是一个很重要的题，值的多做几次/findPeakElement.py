@@ -17,14 +17,14 @@ class Solution(object):
         if n == 1:
             return nums[0]
 
-        L = 0
-        R = n - 1
+        left = 0
+        right = n - 1
 
-        while L < R:
-            mid = (L + R)>>1
+        while left < right:
+            mid = (left + right)>>1
             if nums[mid] > nums[mid + 1]:
-                R = mid
+                right = mid
             else:
-                L = mid + 1
+                left = mid + 1
             
-        return L
+        return left
