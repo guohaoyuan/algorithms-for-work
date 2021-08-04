@@ -1,34 +1,30 @@
 """
-寻找峰值，一个比较有用的算法，一定要会
-
-我们比较numd[mid] nums[mid+1]
-分三种情况：
-        一种是降序的情况，这样搜索区间变为[L, mid]
-        一种是升序的情况，这样搜索区间变为[mid + 1, R]
-        一种是相等的情况，其实这个情况不存在
-
-我就是奇怪为什么mid + 1 不担心越界
+数组是无序的，想办法进行二分法
+关于判断mid是上升区间还是下降区间，比较mid和mid+1元素
+假设mid元素处于上升区间，那我们应该去右侧区间二分查找
+假设mid元素处于下降区间，那我们应该去左侧区间二分查找
+题目已经说明mid不会存在mid=mid+1
 """
 
-
-class Solution:
-    def findPeakElement(self, nums: List[int]) -> int:
-        if not nums:
-            return
-
+class Solution(object):
+    def findPeakElement(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
         n = len(nums)
-        L, R = 0, n - 1
+        
+        if n == 1:
+            return nums[0]
 
-        while L <= R:
-            mid = (L + R) >> 1
-            if L == R:
-                return L
-            if nums[mid] == nums[mid + 1]:
-                # 搜索区间[mid + 1, R]
-                L = mid + 1
-            elif nums[mid] < nums[mid + 1]:
-                # 搜索区间[mid + 1, R]
-                L = mid + 1
-            elif nums[mid] > nums[mid + 1]:
-                # 搜索区间[L, mid]
+        L = 0
+        R = n - 1
+
+        while L < R:
+            mid = (L + R)>>1
+            if nums[mid] > nums[mid + 1]:
                 R = mid
+            else:
+                L = mid + 1
+            
+        return L
