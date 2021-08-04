@@ -1,35 +1,44 @@
 """
-
-质因子，简单理解成因子，最基础的因子分解
-
-我们使用一个数组，存放各个丑数，需要三个指针p2 p3 p5，对应的是数组的索引。
-每次取得最小的丑数，保证升序，另外指针更新是并行的，不是三选一
+第一个丑数是1
+可以看出丑数是1，2,3,5相乘得到，每次就利用当前位置的丑数找到下一个位置丑数
+利用p2 p3 p5 三个指针均是从0开始，分别乘2 3 5,寻找最小的的丑数，补充到res中。
+哪个丑数被用到了，就哪个指针+=1
+一直到遍历n次
 """
 
-class Solution:
-    def nthUglyNumber(self, n: int) -> int:
+class Solution(object):
 
-        def helper(n):
-            res = [1]
-            p2, p3, p5 = 0, 0, 0
+    def generate_ugly(self, res, n):
+        if n == 1:
+            return res[0]
 
-            for i in range(1, n):
-                ugly = min(res[p2] * 2, res[p3] * 3, res[p5] * 5)
-                res.append(ugly)
+        res = [1] * n
+        p2 = 0
+        p3 = 0
+        p5 = 0
 
-                if ugly == res[p2] * 2:
-                    p2 += 1
-                if ugly == res[p3] * 3:
-                    p3 += 1
-                if ugly == res[p5] * 5:
-                    p5 += 1
-                print(res)
+        for i in range(1, n):
+            temp_res_p2 = res[p2] * 2
+            temp_res_p3 = res[p3] * 3
+            temp_res_p5 = res[p5] * 5
 
-            return res[n-1]
-        res = helper(n)
-        return res
+            min_ugly = min(temp_res_p2, temp_res_p3, temp_res_p5)
 
-if __name__ == '__main__':
-    n = 10
-    solution = Solution()
-    print(solution.nthUglyNumber(n))
+            res[i] = min_ugly
+
+            if min_ugly == temp_res_p2:
+                p2 += 1
+            if min_ugly == temp_res_p3:
+                p3 += 1
+            if min_ugly == temp_res_p5:
+                p5 += 1
+        return res[n - 1]
+    
+    def nthUglyNumber(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        res = [1]
+
+        return self.generate_ugly(res, n)
